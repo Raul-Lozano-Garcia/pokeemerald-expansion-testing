@@ -75,7 +75,7 @@ Comments can be added as C comment blocks
 
 === TRAINER_NONE ===
 Name:
-Class: Pkmn Trainer 1
+Class: Master
 Pic: Hiker
 Gender: Male
 Music: Male
@@ -16873,3 +16873,87 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_MEWRIS ===
+Name: MEWRIS
+Class: Master
+Pic: Mewris
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Red 
+
+FRAN (Sudowoodo) (M) @ Quick Claw
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ability: Sturdy 
+Ball: Premier Ball
+EVs: 6 HP / 252 Atk / 252 Def  
+Adamant Nature  
+- Substitute  
+- Counter  
+- Rock Slide  
+- Seismic Toss
+
+ZELDA (Gardevoir) (F) @ Bright Powder  
+Level: 100
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Trace  
+EVs: 252 SpA / 252 SpD / 6 Spe 
+Ball: Ultra Ball
+Modest Nature  
+- Psychic  
+- Shadow Ball  
+- Destiny Bond  
+- Thunderbolt
+
+TRUMP (Braviary) (M) @ Silk Scarf  
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ability: Sheer Force  
+EVs: 6 HP / 252 Atk / 252 Spe  
+Ball: Nest Ball
+Happiness: 255
+Jolly Nature  
+- Hyper Beam  
+- Sky Attack  
+- Return  
+- Rock Slide
+
+NESSY (Lapras) (M) @ Leftovers  
+Level: 100
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Shell Armor  
+EVs: 252 HP / 128 Def / 128 SpD  
+Ball: Dive Ball
+Bold Nature    
+- Hydro Pump  
+- Whirlpool  
+- Perish Song  
+- Icy Wind
+
+SIMBA (Luxray) (M) @ Magnet  
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Intimidate  
+Shiny: Yes  
+EVs: 6 HP / 252 Atk / 252 SpA  
+Modest Nature  
+- Thunderbolt  
+- Superpower  
+- Crunch  
+- Thunder Wave
+
+HOUDINI (Alakazam) (M) @ Twisted Spoon  
+Level: 100
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Inner Focus  
+EVs: 252 SpA / 6 SpD / 252 Spe 
+Ball: Luxury Ball
+Modest Nature  
+- Psychic  
+- Shadow Ball  
+- Fire Punch  
+- Signal Beam
