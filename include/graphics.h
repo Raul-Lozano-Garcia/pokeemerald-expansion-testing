@@ -1111,8 +1111,8 @@ extern const u32 gItemIcon_LustrousOrb[];
 extern const u32 gItemIconPalette_LustrousOrb[];
 extern const u32 gItemIcon_GriseousOrb[];
 extern const u32 gItemIconPalette_GriseousOrb[];
-extern const u32 gItemIcon_Armour[];
-extern const u32 gItemIconPalette_Armour[];
+extern const u32 gItemIcon_Armor[];
+extern const u32 gItemIconPalette_Armor[];
 // Incenses
 extern const u32 gItemIcon_SeaIncense[];
 extern const u32 gItemIconPalette_SeaIncense[];

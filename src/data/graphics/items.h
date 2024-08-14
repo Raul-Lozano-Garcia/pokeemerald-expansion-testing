@@ -1156,8 +1156,8 @@ const u32 gItemIconPalette_LustrousOrb[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_GriseousOrb[] = INCBIN_U32("graphics/items/icons/griseous_orb.4bpp.lz");
 const u32 gItemIconPalette_GriseousOrb[] = INCBIN_U32("graphics/items/icon_palettes/griseous_orb.gbapal.lz");
 
-const u32 gItemIcon_Armour[] = INCBIN_U32("graphics/items/icons/armour.4bpp.lz");
-const u32 gItemIconPalette_Armour[] = INCBIN_U32("graphics/items/icon_palettes/armour.gbapal.lz");
+const u32 gItemIcon_Armor[] = INCBIN_U32("graphics/items/icons/armor.4bpp.lz");
+const u32 gItemIconPalette_Armor[] = INCBIN_U32("graphics/items/icon_palettes/armor.gbapal.lz");
 
 // Incenses
 
