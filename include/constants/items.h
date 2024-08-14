@@ -850,6 +850,7 @@
 #define ITEM_N_SOLARIZER 700
 #define ITEM_N_LUNARIZER 701
 #define ITEM_REINS_OF_UNITY 702
+#define ITEM_LOVRINA_MACHINE 829
 
 // Battle Mechanic Key Items
 #define ITEM_MEGA_RING 703
@@ -1004,7 +1005,7 @@
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 829
+#define ITEMS_COUNT 830
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

@@ -12105,6 +12105,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ReinsOfUnity,
     },
 
+    [ITEM_LOVRINA_MACHINE] =
+    {
+        .name = HANDLE_EXPANDED_ITEM_NAME("LovrinaMachine", "Lovrina Machine"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "Cipher device to\n"
+            "change Lugia's form."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+        .iconPic = gItemIcon_LovrinaMachine,
+        .iconPalette = gItemIconPalette_LovrinaMachine,
+    },
+
 // Battle Mechanic Key Items
 
     [ITEM_MEGA_RING] =
