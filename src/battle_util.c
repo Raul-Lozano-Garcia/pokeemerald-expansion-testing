@@ -10348,6 +10348,11 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
             RecordAbilityBattle(battlerDef, GetBattlerAbility(battlerDef));
     }
 
+    if(gBattleMons[battlerAtk].species == SPECIES_LUGIA_SHADOW)
+    {
+        mod = UQ_4_12(2.0);
+    }
+
     *modifier = uq4_12_multiply(*modifier, mod);
 }
 

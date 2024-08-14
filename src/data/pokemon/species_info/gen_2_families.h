@@ -7468,7 +7468,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_FAMILY_LARVITAR
 
 #if P_FAMILY_LUGIA
-    [SPECIES_LUGIA] =
+    [SPECIES_LUGIA_NORMAL] =
 {
 
 
@@ -7538,6 +7538,81 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isFrontierBanned = TRUE,
         .levelUpLearnset = sLugiaLevelUpLearnset,
         .teachableLearnset = sLugiaTeachableLearnset,
+        .formSpeciesIdTable = sLugiaFormSpeciesIdTable,
+        .formChangeTable = sLugiaFormChangeTable,
+    },
+
+    [SPECIES_LUGIA_SHADOW] =
+{
+
+
+        .baseHP        = 106,
+        .baseAttack    = 154,
+        .baseDefense   = 90,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 130,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
+        .catchRate = 3,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 340,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 306,
+    #else
+        .expYield = 220,
+    #endif
+        .evYield_SpDefense = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Lugia"),
+        .cryId = CRY_LUGIA,
+        .natDexNum = NATIONAL_DEX_LUGIA,
+        .categoryName = _("Diving"),
+        .height = 52,
+        .weight = 2160,
+        .description = COMPOUND_STRING(
+            "Its heart has been locked up by the\n"
+            "intervention of Cipher, making it much more\n"
+            "aggressive."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 721,
+        .trainerOffset = 19,
+        .frontPic = gMonFrontPic_LugiaShadow,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Lugia,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
+        .frontAnimDelay = 20,
+        .enemyMonElevation = 6,
+        .backPic = gMonBackPic_LugiaShadow,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_LugiaShadow,
+        .shinyPalette = gMonShinyPalette_LugiaShadow,
+        .iconSprite = gMonIcon_LugiaShadow,
+        .iconPalIndex = 0,
+        FOOTPRINT(Lugia)
+        OVERWORLD(
+            sPicTable_Lugia,
+            SIZE_64x64,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_LugiaShadow,
+            gShinyOverworldPalette_LugiaShadow
+        )
+        .isLegendary = TRUE,
+        .isFrontierBanned = TRUE,
+        .levelUpLearnset = sLugiaShadowLevelUpLearnset,
+        .teachableLearnset = sLugiaTeachableLearnset,
+        .formSpeciesIdTable = sLugiaFormSpeciesIdTable,
+        .formChangeTable = sLugiaFormChangeTable,
     },
 #endif //P_FAMILY_LUGIA
 
