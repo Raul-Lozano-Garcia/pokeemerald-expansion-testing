@@ -1817,6 +1817,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
     },
 
+    [ABILITY_FULL_MIND] =
+    {
+        .name = _("Full Mind"),
+        .description = COMPOUND_STRING("Raises Sp. Atk."),
+        .aiRating = 10,
+    },
+
     [ABILITY_SHADOW_SHIELD] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
