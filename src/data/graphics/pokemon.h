@@ -4356,6 +4356,22 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
+    const u32 gMonFrontPic_MewtwoArmored[] = INCBIN_U32("graphics/pokemon/mewtwo/armored/anim_front.4bpp.lz");
+    const u32 gMonPalette_MewtwoArmored[] = INCBIN_U32("graphics/pokemon/mewtwo/armored/normal.gbapal.lz");
+    const u32 gMonBackPic_MewtwoArmored[] = INCBIN_U32("graphics/pokemon/mewtwo/armored/back.4bpp.lz");
+    const u32 gMonShinyPalette_MewtwoArmored[] = INCBIN_U32("graphics/pokemon/mewtwo/armored/shiny.gbapal.lz");
+    const u8 gMonIcon_MewtwoArmored[] = INCBIN_U8("graphics/pokemon/mewtwo/armored/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_MewtwoArmored[] = INCBIN_U8("graphics/pokemon/mewtwo/armored/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_MewtwoArmored[] = INCBIN_COMP("graphics/pokemon/mewtwo/armored/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u32 gOverworldPalette_MewtwoArmored[] = INCBIN_U32("graphics/pokemon/mewtwo/armored/overworld_normal.gbapal.lz");
+    const u32 gShinyOverworldPalette_MewtwoArmored[] = INCBIN_U32("graphics/pokemon/mewtwo/armored/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
 #if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_MewtwoMegaX[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_x/front.4bpp.lz");
     const u32 gMonPalette_MewtwoMegaX[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_x/normal.gbapal.lz");

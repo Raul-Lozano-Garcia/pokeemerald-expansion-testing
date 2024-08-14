@@ -18043,7 +18043,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_MEWTWO
     
 
-[SPECIES_MEWTWO] =
+[SPECIES_MEWTWO_NORMAL] =
     {
         .baseHP        = 106,
         .baseAttack    = 110,
@@ -18104,6 +18104,74 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             TRACKS_FOOT,
             gOverworldPalette_Mewtwo,
             gShinyOverworldPalette_Mewtwo
+        )
+        .isLegendary = TRUE,
+        .isFrontierBanned = TRUE,
+        .levelUpLearnset = sMewtwoLevelUpLearnset,
+        .teachableLearnset = sMewtwoTeachableLearnset,
+        .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
+        .formChangeTable = sMewtwoFormChangeTable,
+    },
+
+    [SPECIES_MEWTWO_ARMORED] =
+    {
+        .baseHP        = 106,
+        .baseAttack    = 90,
+        .baseDefense   = 100,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 154,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
+        .catchRate = 3,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 340,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 306,
+    #else
+        .expYield = 220,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_FULL_MIND, ABILITY_FULL_MIND, ABILITY_FULL_MIND },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Mewtwo"),
+        .cryId = CRY_MEWTWO,
+        .natDexNum = NATIONAL_DEX_MEWTWO,
+        .categoryName = _("Genetic"),
+        .height = 20,
+        .weight = 1220,
+        .description = COMPOUND_STRING(
+            "When wearing his armor, Mewtwo's powers\n"
+            "exceed their limit."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 309,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_MewtwoArmored,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Mewtwo,
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_MewtwoArmored,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = gMonPalette_MewtwoArmored,
+        .shinyPalette = gMonShinyPalette_MewtwoArmored,
+        .iconSprite = gMonIcon_MewtwoArmored,
+        .iconPalIndex = 2,
+        FOOTPRINT(Mewtwo)
+        OVERWORLD(
+            sPicTable_Mewtwo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_MewtwoArmored,
+            gShinyOverworldPalette_MewtwoArmored
         )
         .isLegendary = TRUE,
         .isFrontierBanned = TRUE,

@@ -7179,6 +7179,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_GriseousOrb,
     },
 
+    [ITEM_ARMOUR] =
+    {
+        .name = _("Armour"),
+        .price = (I_PRICE >= GEN_7) ? 0 : 10000,
+        .description = COMPOUND_STRING(
+            "An armour that\n" 
+            "Mewtwo wears to\n" 
+            "enhance its powers."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 60,
+        .iconPic = gItemIcon_Armour,
+        .iconPalette = gItemIconPalette_Armour,
+    },
+
 // Incenses
 
     [ITEM_SEA_INCENSE] =
