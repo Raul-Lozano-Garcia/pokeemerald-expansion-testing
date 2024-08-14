@@ -16885,7 +16885,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Red 
 
-FRAN (Sudowoodo) (M) @ Quick Claw
+Fran (Sudowoodo) (M) @ Quick Claw
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
 Ability: Sturdy 
@@ -16897,7 +16897,7 @@ Adamant Nature
 - Rock Slide  
 - Seismic Toss
 
-ZELDA (Gardevoir) (F) @ Bright Powder  
+Zelda (Gardevoir) (F) @ Bright Powder  
 Level: 100
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ability: Trace  
@@ -16909,7 +16909,7 @@ Modest Nature
 - Destiny Bond  
 - Thunderbolt
 
-TRUMP (Braviary) (M) @ Silk Scarf  
+Trump (Braviary) (M) @ Silk Scarf  
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
 Ability: Sheer Force  
@@ -16922,7 +16922,7 @@ Jolly Nature
 - Return  
 - Rock Slide
 
-NESSY (Lapras) (M) @ Leftovers  
+Nessy (Lapras) (M) @ Leftovers  
 Level: 100
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ability: Shell Armor  
@@ -16934,7 +16934,7 @@ Bold Nature
 - Perish Song  
 - Icy Wind
 
-SIMBA (Luxray) (M) @ Magnet  
+Simba (Luxray) (M) @ Magnet  
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ability: Intimidate  
@@ -16946,7 +16946,7 @@ Modest Nature
 - Crunch  
 - Thunder Wave
 
-HOUDINI (Alakazam) (M) @ Twisted Spoon  
+Houdini (Alakazam) (M) @ Twisted Spoon  
 Level: 100
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Ability: Inner Focus  
@@ -16957,3 +16957,26 @@ Modest Nature
 - Shadow Ball  
 - Fire Punch  
 - Signal Beam
+
+=== TRAINER_MEWRIS_2 ===
+Name: MEWRIS
+Class: Master
+Pic: Mewris
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Red 
+
+Mewtwo-Armored @ Armour
+Level: 100
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Full Mind 
+Ball: Master Ball
+EVs: 252 HP / 252 SpA / 6 Spe  
+Modest Nature  
+- Psychic  
+- Shadow Ball  
+- Ice Beam  
+- Flamethrower
