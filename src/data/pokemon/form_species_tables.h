@@ -572,7 +572,8 @@ static const u16 sMoltresFormSpeciesIdTable[] = {
 
 #if P_FAMILY_MEWTWO
 static const u16 sMewtwoFormSpeciesIdTable[] = {
-    SPECIES_MEWTWO,
+    SPECIES_MEWTWO_NORMAL,
+    SPECIES_MEWTWO_ARMORED,
 #if P_MEGA_EVOLUTIONS
     SPECIES_MEWTWO_MEGA_X,
     SPECIES_MEWTWO_MEGA_Y,

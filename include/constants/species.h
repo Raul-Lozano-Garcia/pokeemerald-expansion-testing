@@ -151,7 +151,8 @@
 #define SPECIES_DRATINI                                 147
 #define SPECIES_DRAGONAIR                               148
 #define SPECIES_DRAGONITE                               149
-#define SPECIES_MEWTWO                                  150
+#define SPECIES_MEWTWO                                  SPECIES_MEWTWO_NORMAL
+#define SPECIES_MEWTWO_NORMAL                           150
 #define SPECIES_MEW                                     151
 #define SPECIES_CHIKORITA                               152
 #define SPECIES_BAYLEEF                                 153
@@ -1374,6 +1375,7 @@
 #define SPECIES_ALCREMIE_RIBBON_RUBY_SWIRL              1286
 #define SPECIES_ALCREMIE_RIBBON_CARAMEL_SWIRL           1287
 #define SPECIES_ALCREMIE_RIBBON_RAINBOW_SWIRL           1288
+#define SPECIES_MEWTWO_ARMORED                          1524
 
 #define GEN9_START                                      SPECIES_ALCREMIE_RIBBON_RAINBOW_SWIRL
 
@@ -1629,7 +1631,7 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
 
-#define SPECIES_EGG (SPECIES_MIMIKYU_TOTEM_BUSTED + 1)
+#define SPECIES_EGG (SPECIES_MEWTWO_ARMORED + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 
