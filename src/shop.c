@@ -1170,26 +1170,48 @@ static void Task_ReturnToItemListAfterItemPurchase(u8 taskId)
 
     if (JOY_NEW(A_BUTTON | B_BUTTON))
     {
-        u16 premierBallsToAdd = tItemCount / 10;
-        if (premierBallsToAdd >= 1
-         && ((I_PREMIER_BALL_BONUS <= GEN_7 && tItemId == ITEM_POKE_BALL)
-          || (I_PREMIER_BALL_BONUS >= GEN_8 && (ItemId_GetPocket(tItemId) == POCKET_POKE_BALLS))))
-        {
-            u32 spaceAvailable = GetFreeSpaceForItemInBag(ITEM_PREMIER_BALL);
-            if (spaceAvailable < premierBallsToAdd)
-                premierBallsToAdd = spaceAvailable;
-        }
-        else
-        {
-            premierBallsToAdd = 0;
-        }
+        u16 bonusBallsToAdd = tItemCount / 10;
+        u16 bonusBallType = ITEM_PREMIER_BALL;
 
-        PlaySE(SE_SELECT);
-        AddBagItem(ITEM_PREMIER_BALL, premierBallsToAdd);
-        if (premierBallsToAdd > 0)
+        if (bonusBallsToAdd >= 1)
         {
-            ConvertIntToDecimalStringN(gStringVar1, premierBallsToAdd, STR_CONV_MODE_LEFT_ALIGN, MAX_ITEM_DIGITS);
-            BuyMenuDisplayMessage(taskId, (premierBallsToAdd >= 2 ? gText_ThrowInPremierBalls : gText_ThrowInPremierBall), BuyMenuReturnToItemList);
+            if ((I_PREMIER_BALL_BONUS <= GEN_7 && tItemId == ITEM_POKE_BALL)
+             || (I_PREMIER_BALL_BONUS >= GEN_8 && ItemId_GetPocket(tItemId) == POCKET_POKE_BALLS))
+            {
+                bonusBallType = ITEM_PREMIER_BALL;
+            }
+            else if (tItemId == ITEM_ULTRA_BALL)
+            {
+                bonusBallType = ITEM_LUXURY_BALL;
+            }
+            else
+            {
+                bonusBallsToAdd = 0;
+            }
+
+            if (bonusBallsToAdd > 0)
+            {
+                u32 spaceAvailable = GetFreeSpaceForItemInBag(bonusBallType);
+                if (spaceAvailable < bonusBallsToAdd)
+                    bonusBallsToAdd = spaceAvailable;
+
+                PlaySE(SE_SELECT);
+                AddBagItem(bonusBallType, bonusBallsToAdd);
+
+                ConvertIntToDecimalStringN(gStringVar1, bonusBallsToAdd, STR_CONV_MODE_LEFT_ALIGN, MAX_ITEM_DIGITS);
+                if (bonusBallType == ITEM_PREMIER_BALL)
+                {
+                    BuyMenuDisplayMessage(taskId, (bonusBallsToAdd >= 2 ? gText_ThrowInPremierBalls : gText_ThrowInPremierBall), BuyMenuReturnToItemList);
+                }
+                else if (bonusBallType == ITEM_LUXURY_BALL)
+                {
+                    BuyMenuDisplayMessage(taskId, (bonusBallsToAdd >= 2 ? gText_ThrowInLuxuryBalls : gText_ThrowInLuxuryBall), BuyMenuReturnToItemList);
+                }
+            }
+            else
+            {
+                BuyMenuReturnToItemList(taskId);
+            }
         }
         else
         {
