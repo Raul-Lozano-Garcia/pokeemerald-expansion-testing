@@ -6937,10 +6937,15 @@ static void PrintForms(u8 taskId, u16 species)
             sPokedexView->sFormScreenData.formIds[j++] = i;
             times += 1;
             LoadMonIconPalettePersonality(speciesForm, personality); //Loads pallete for current mon
-            if (times < 7)
-                gTasks[taskId].data[4+times] = CreateMonIcon(speciesForm, SpriteCB_MonIcon, 52 + 34*(times-1), 31, 4, personality); //Create pokemon sprite
-            else if (times < 14)
-                gTasks[taskId].data[4+times] = CreateMonIcon(speciesForm, SpriteCB_MonIcon, 18 + 34*(times-7), 70 - y_offset_icons, 4, personality); //Create pokemon sprite
+            if (times < 7) {
+                gTasks[taskId].data[4+times] = CreateMonIcon(speciesForm, SpriteCB_MonIcon, 52 + 34*(times-1), 31, 4, personality); // Primera fila
+            } else if (times < 14) {
+                gTasks[taskId].data[4+times] = CreateMonIcon(speciesForm, SpriteCB_MonIcon, 18 + 34*(times-7), 70 - y_offset_icons, 4, personality); // Segunda fila
+            } else if (times < 21) {
+                gTasks[taskId].data[4+times] = CreateMonIcon(speciesForm, SpriteCB_MonIcon, 18 + 34*(times-14), 109 - 2*y_offset_icons, 4, personality); // Tercera fila
+            } else if (times < 28) {
+                gTasks[taskId].data[4+times] = CreateMonIcon(speciesForm, SpriteCB_MonIcon, 18 + 34*(times-21), 148 - 3*y_offset_icons, 4, personality); // Cuarta fila
+            }
             gSprites[gTasks[taskId].data[4+times]].oam.priority = 0;
         }
     }

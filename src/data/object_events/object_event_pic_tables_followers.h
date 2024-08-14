@@ -163,9 +163,11 @@ static const struct SpriteFrameImage sPicTable_Arbok[] = {
 static const struct SpriteFrameImage sPicTable_Pichu[] = {
     overworld_ascending_frames(gObjectEventPic_Pichu, 4, 4),
 };
+#if P_PICHU_SPIKY_EARED_FORM
 static const struct SpriteFrameImage sPicTable_PichuSpikyEared[] = {
     overworld_ascending_frames(gObjectEventPic_PichuSpikyEared, 4, 4),
 };
+#endif //P_PICHU_SPIKY_EARED_FORM
 #endif //P_GEN_2_CROSS_EVOS
 static const struct SpriteFrameImage sPicTable_Pikachu[] = {
     overworld_ascending_frames(gObjectEventPic_Pikachu, 4, 4),
