@@ -1521,6 +1521,8 @@ extern const u32 gItemIconPalette_NSolarizer[];
 extern const u32 gItemIconPalette_NLunarizer[];
 extern const u32 gItemIcon_ReinsOfUnity[];
 extern const u32 gItemIconPalette_ReinsOfUnity[];
+extern const u32 gItemIcon_LovrinasMachine[];
+extern const u32 gItemIconPalette_LovrinasMachine[];
 // Battle Mechanic Key Items
 extern const u32 gItemIcon_MegaRing[];
 extern const u32 gItemIconPalette_MegaRing[];

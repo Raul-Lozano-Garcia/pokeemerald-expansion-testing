@@ -340,7 +340,9 @@ static const union AnimCmd sAnim_Pichu_1[] =
     ANIMCMD_END,
 };
 
+#if P_PICHU_SPIKY_EARED_FORM
 PLACEHOLDER_ANIM_SINGLE_FRAME(PichuSpikyEared);
+#endif //P_PICHU_SPIKY_EARED_FORM
 #endif //P_GEN_2_CROSS_EVOS
 
 static const union AnimCmd sAnim_Pikachu_1[] =
@@ -10236,7 +10238,9 @@ SINGLE_ANIMATION(Arbok);
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Pichu);
+#if P_PICHU_SPIKY_EARED_FORM
 SINGLE_ANIMATION(PichuSpikyEared);
+#endif //P_PICHU_SPIKY_EARED_FORM
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Pikachu);
 #if P_COSPLAY_PIKACHU_FORMS

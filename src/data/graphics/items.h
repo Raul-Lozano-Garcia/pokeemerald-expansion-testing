@@ -1791,6 +1791,9 @@ const u32 gItemIconPalette_NLunarizer[] = INCBIN_U32("graphics/items/icon_palett
 const u32 gItemIcon_ReinsOfUnity[] = INCBIN_U32("graphics/items/icons/reins_of_unity.4bpp.lz");
 const u32 gItemIconPalette_ReinsOfUnity[] = INCBIN_U32("graphics/items/icon_palettes/reins_of_unity.gbapal.lz");
 
+const u32 gItemIcon_LovrinasMachine[] = INCBIN_U32("graphics/items/icons/lovrinas_machine.4bpp.lz");
+const u32 gItemIconPalette_LovrinasMachine[] = INCBIN_U32("graphics/items/icon_palettes/lovrinas_machine.gbapal.lz");
+
 // Battle Mechanic Key Items
 
 const u32 gItemIcon_MegaRing[] = INCBIN_U32("graphics/items/icons/mega_ring.4bpp.lz");
