@@ -165,7 +165,7 @@
 #define HOLD_EFFECT_BERSERK_GENE        184
 
 // Custom
-#define HOLD_EFFECT_ARMOUR              185
+#define HOLD_EFFECT_ARMOR              185
 
 #define HOLD_EFFECT_CHOICE(holdEffect)((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SCARF || holdEffect == HOLD_EFFECT_CHOICE_SPECS))
 

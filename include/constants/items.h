@@ -1000,7 +1000,7 @@
 #define ITEM_POKESHI_DOLL 827
 
 // Custom
-#define ITEM_ARMOUR 828
+#define ITEM_ARMOR 828
 
 // HOPO BERRY
 // LEGEND PLATE
