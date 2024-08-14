@@ -251,7 +251,8 @@
 #define SPECIES_LARVITAR                                246
 #define SPECIES_PUPITAR                                 247
 #define SPECIES_TYRANITAR                               248
-#define SPECIES_LUGIA                                   249
+#define SPECIES_LUGIA                                   SPECIES_LUGIA_NORMAL
+#define SPECIES_LUGIA_NORMAL                            249
 #define SPECIES_HO_OH                                   250
 #define SPECIES_CELEBI                                  251
 #define SPECIES_TREECKO                                 252
@@ -1376,6 +1377,7 @@
 #define SPECIES_ALCREMIE_RIBBON_CARAMEL_SWIRL           1287
 #define SPECIES_ALCREMIE_RIBBON_RAINBOW_SWIRL           1288
 #define SPECIES_MEWTWO_ARMORED                          1524
+#define SPECIES_LUGIA_SHADOW                            1435
 
 #define GEN9_START                                      SPECIES_ALCREMIE_RIBBON_RAINBOW_SWIRL
 
@@ -1540,7 +1542,6 @@
 #define SPECIES_TERAPAGOS_TERASTAL                      1432
 #define SPECIES_TERAPAGOS_STELLAR                       1433
 #define SPECIES_PECHARUNT                               1434
-#define SPECIES_LUGIA_SHADOW                            1435
 #define SPECIES_MOTHIM_SANDY_CLOAK                      1436
 #define SPECIES_MOTHIM_TRASH_CLOAK                      1437
 #define SPECIES_SCATTERBUG_POLAR                        1438

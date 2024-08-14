@@ -12105,9 +12105,9 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ReinsOfUnity,
     },
 
-    [ITEM_LOVRINA_MACHINE] =
+    [ITEM_LOVRINAS_MACHINE] =
     {
-        .name = HANDLE_EXPANDED_ITEM_NAME("LovrinaMachine", "Lovrina Machine"),
+        .name = HANDLE_EXPANDED_ITEM_NAME("Lovrina'sMachine", "Lovrina's Machine"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
@@ -12116,8 +12116,8 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
-        .iconPic = gItemIcon_LovrinaMachine,
-        .iconPalette = gItemIconPalette_LovrinaMachine,
+        .iconPic = gItemIcon_LovrinasMachine,
+        .iconPalette = gItemIconPalette_LovrinasMachine,
     },
 
 // Battle Mechanic Key Items
