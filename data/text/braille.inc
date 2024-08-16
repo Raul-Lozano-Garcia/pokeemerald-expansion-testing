@@ -115,3 +115,7 @@ AncientTomb_Braille_ShineInTheMiddle:
 	.braille "INHERIT OUR\n"
 	.braille "WILL, SHINE\n"
 	.braille "IN THE MIDDLE.$"
+
+MossdeepCity_Braille_WishMaker:
+	brailleformat 4, 6, 26, 13, 7, 9
+	.braille "WISH MAKER.$"
