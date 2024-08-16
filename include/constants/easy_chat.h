@@ -22,6 +22,7 @@
 #define EASY_CHAT_TYPE_QUIZ_SET_ANSWER         18
 #define EASY_CHAT_TYPE_APPRENTICE              19
 #define EASY_CHAT_TYPE_QUESTIONNAIRE           20
+#define EASY_CHAT_TYPE_WHITE_ROCK              21
 
 #define EASY_CHAT_PERSON_REPORTER_MALE   0
 #define EASY_CHAT_PERSON_REPORTER_FEMALE 1
@@ -377,6 +378,7 @@
 #define EC_WORD_HERS         ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 72)
 #define EC_WORD_SHE_IS       ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 73)
 #define EC_WORD_SOME         ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 74)
+#define EC_WORD_MAKER        ((EC_GROUP_PEOPLE << EC_MASK_BITS) | 75)
 
 // VOICES
 #define EC_WORD_EXCL                        ((EC_GROUP_VOICES << EC_MASK_BITS) | 0)
@@ -844,6 +846,7 @@
 #define EC_WORD_RADIO         ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 42)
 #define EC_WORD_RENTAL        ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 43)
 #define EC_WORD_WORLD         ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 44)
+#define EC_WORD_WISH          ((EC_GROUP_LIFESTYLE << EC_MASK_BITS) | 45)
 
 // HOBBIES
 #define EC_WORD_IDOL          ((EC_GROUP_HOBBIES << EC_MASK_BITS) | 0)

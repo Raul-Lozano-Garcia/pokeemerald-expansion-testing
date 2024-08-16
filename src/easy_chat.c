@@ -113,6 +113,7 @@ static u8 GetLastAlphabetColumn(u8);
 static void ReduceToValidWordSelectColumn(void);
 static bool8 IsSelectedWordIndexInvalid(void);
 static int DidPlayerInputMysteryGiftPhrase(void);
+static int DidPlayerInputWhiteRockPhrase(void);
 static u16 DidPlayerInputABerryMasterWifePhrase(void);
 static bool8 InitEasyChatScreenControl_(void);
 static void LoadEasyChatPalettes(void);
@@ -678,6 +679,18 @@ static const struct EasyChatScreenTemplate sEasyChatScreenTemplates[] = {
         .confirmText1 = gText_TheAnswer,
         .confirmText2 = gText_IsAsShownOkay,
     },
+    {
+        .type = EASY_CHAT_TYPE_WHITE_ROCK,
+        .numColumns = 2,
+        .numRows = 1,
+        .frameId = FRAMEID_COMBINE_TWO_WORDS,
+        .fourFooterOptions = FALSE,
+        .titleText = gText_WhiteRock,
+        .instructionsText1 = gText_CombineTwoWordsOrPhrases,
+        .instructionsText2 = gText_ToMakeYourWish,
+        .confirmText1 = gText_TheAnswer,
+        .confirmText2 = gText_IsAsShownOkay,
+    },
 };
 
 // IDs are used indirectly as indexes into gEasyChatWordsByLetterPointers
@@ -695,6 +708,11 @@ static const u16 sMysteryGiftPhrase[NUM_QUESTIONNAIRE_WORDS] = {
     EC_WORD_TOGETHER,
     EC_WORD_WITH,
     EC_WORD_ALL,
+};
+
+static const u16 sWhiteRockPhrase[2] = {
+    EC_WORD_WISH,
+    EC_WORD_MAKER,
 };
 
 static const u16 sBerryMasterWifePhrases[][2] = {
@@ -1539,6 +1557,11 @@ void ShowEasyChatScreen(void)
     case EASY_CHAT_TYPE_QUESTIONNAIRE:
         words = GetQuestionnaireWordsPtr();
         break;
+    case EASY_CHAT_TYPE_WHITE_ROCK:
+        words = (u16 *)gStringVar3;
+        words[0] = EC_EMPTY_WORD;
+        words[1] = EC_EMPTY_WORD;
+        break;
     default:
         return;
     }
@@ -2165,6 +2188,16 @@ static u16 TryConfirmWords(void)
     }
     else if (sEasyChatScreen->type == EASY_CHAT_TYPE_QUESTIONNAIRE)
     {
+        sEasyChatScreen->inputState = INPUTSTATE_CONFIRM_WORDS_YES_NO;
+        return ECFUNC_PROMPT_CONFIRM;
+    }
+    else if (sEasyChatScreen->type == EASY_CHAT_TYPE_WHITE_ROCK)
+    {
+        if (!IsCurrentPhraseFull())
+        {
+            sEasyChatScreen->inputState = INPUTSTATE_WAIT_FOR_MSG;
+            return ECFUNC_MSG_COMBINE_TWO_WORDS;
+        }
         sEasyChatScreen->inputState = INPUTSTATE_CONFIRM_WORDS_YES_NO;
         return ECFUNC_PROMPT_CONFIRM;
     }
@@ -2982,12 +3015,23 @@ static void SetSpecialEasyChatResult(void)
     case EASY_CHAT_TYPE_GOOD_SAYING:
         gSpecialVar_0x8004 = DidPlayerInputABerryMasterWifePhrase();
         break;
+    case EASY_CHAT_TYPE_WHITE_ROCK:
+        if (DidPlayerInputWhiteRockPhrase())
+            gSpecialVar_0x8004 = 3;
+        else
+            gSpecialVar_0x8004 = 0;
+        break;
     }
 }
 
 static int DidPlayerInputMysteryGiftPhrase(void)
 {
     return !IsPhraseDifferentThanPlayerInput(sMysteryGiftPhrase, ARRAY_COUNT(sMysteryGiftPhrase));
+}
+
+static int DidPlayerInputWhiteRockPhrase(void)
+{
+    return !IsPhraseDifferentThanPlayerInput(sWhiteRockPhrase, ARRAY_COUNT(sWhiteRockPhrase));
 }
 
 static u16 DidPlayerInputABerryMasterWifePhrase(void)

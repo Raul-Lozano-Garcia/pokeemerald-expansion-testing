@@ -73,6 +73,7 @@ const u8 gEasyChatWord_ToHer[] = _("TO HER");
 const u8 gEasyChatWord_Hers[] = _("HERS");
 const u8 gEasyChatWord_SheIs[] = _("SHE IS");
 const u8 gEasyChatWord_Some[] = _("SOME");
+const u8 gEasyChatWord_Maker[] = _("MAKER");
 
 const struct EasyChatWordInfo gEasyChatGroup_People[] = {
     [EC_INDEX(EC_WORD_OPPONENT)] =
@@ -523,6 +524,12 @@ const struct EasyChatWordInfo gEasyChatGroup_People[] = {
     {
         .text = gEasyChatWord_Some,
         .alphabeticalOrder = 3,
+        .enabled = TRUE,
+    },
+    [EC_INDEX(EC_WORD_MAKER)] =
+    {
+        .text = gEasyChatWord_Maker,
+        .alphabeticalOrder = 75,
         .enabled = TRUE,
     },
 };

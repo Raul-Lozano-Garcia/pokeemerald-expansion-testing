@@ -43,6 +43,7 @@ const u8 gEasyChatWord_Life[] = _("LIFE");
 const u8 gEasyChatWord_Radio[] = _("RADIO");
 const u8 gEasyChatWord_Rental[] = _("RENTAL");
 const u8 gEasyChatWord_World[] = _("WORLD");
+const u8 gEasyChatWord_Wish[] = _("WISH");
 
 const struct EasyChatWordInfo gEasyChatGroup_Lifestyle[] = {
     [EC_INDEX(EC_WORD_CHORES)] =
@@ -313,6 +314,12 @@ const struct EasyChatWordInfo gEasyChatGroup_Lifestyle[] = {
     {
         .text = gEasyChatWord_World,
         .alphabeticalOrder = 44,
+        .enabled = TRUE,
+    },
+    [EC_INDEX(EC_WORD_WISH)] =
+    {
+        .text = gEasyChatWord_Wish,
+        .alphabeticalOrder = 45,
         .enabled = TRUE,
     },
 };
