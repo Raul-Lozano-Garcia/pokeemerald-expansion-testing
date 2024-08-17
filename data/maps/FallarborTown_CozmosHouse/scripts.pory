@@ -50,6 +50,8 @@ FallarborTown_CozmosHouse_EventScript_GiveAuroraTicket::
 	giveitem ITEM_AURORA_TICKET
 	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
 	setflag FLAG_RECEIVED_AURORA_TICKET
+	msgbox FallarborTown_CozmosHouse_Text_GiveMeteorite, MSGBOX_DEFAULT
+	giveitem ITEM_METEORITE
 	msgbox FallarborTown_CozmosHouse_Text_GaveAuroraTicket, MSGBOX_DEFAULT
 	release
 	end
@@ -139,6 +141,10 @@ FallarborTown_CozmosHouse_Text_GiveAuroraTicket:
 	.string "similar to those of the meteorite that\p"
 	.string "fell some time ago on BIRTH ISLAND.\n"
 	.string "Would you mind taking a look at it?$"
+	
+FallarborTown_CozmosHouse_Text_GiveMeteorite:
+	.string "You can take the METEORITE with you. I\n"
+	.string "don't need it anymore.$"
 
 FallarborTown_CozmosHouse_Text_GaveAuroraTicket:
 	.string "PROF. COZMO: I hope all our efforts have\n"
