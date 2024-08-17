@@ -279,7 +279,7 @@ FallarborTown_CozmosHouse_Text_GiveAuroraTicket:
 # 140 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 	.string "fell some time ago on BIRTH ISLAND.\n"
 # 141 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
-	.string "Would you mindtaking a look at it?$"
+	.string "Would you mind taking a look at it?$"
 # 142 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
 
 # 143 "data/maps/FallarborTown_CozmosHouse/scripts.pory"
