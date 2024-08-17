@@ -44,7 +44,7 @@
 
 #define FLAG_WHITE_ROCK      0x20 // Custom
 #define FLAG_RAN_JIRACHI     0x21 // Custom
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
+#define FLAG_GIVE_AURORA_TICKET 0x22 // Custom
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
