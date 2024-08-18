@@ -31,8 +31,8 @@ MossdeepCity_EventScript_TryRemoveJirachi:
     return
 
 MossdeepCity_EventScript_RanFromJirachi:
-	clearflag(FLAG_WHITE_ROCK)
-	clearflag(FLAG_RAN_JIRACHI)
+	clearflag FLAG_WHITE_ROCK
+	clearflag FLAG_RAN_JIRACHI
     return
 
 MossdeepCity_EventScript_PokefanF::

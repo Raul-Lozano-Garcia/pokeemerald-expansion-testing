@@ -65,9 +65,9 @@ MossdeepCity_EventScript_TryRemoveJirachi:
 # 33 "data/maps/MossdeepCity/scripts.pory"
 MossdeepCity_EventScript_RanFromJirachi:
 # 34 "data/maps/MossdeepCity/scripts.pory"
-	clearflag(FLAG_WHITE_ROCK)
+	clearflag FLAG_WHITE_ROCK
 # 35 "data/maps/MossdeepCity/scripts.pory"
-	clearflag(FLAG_RAN_JIRACHI)
+	clearflag FLAG_RAN_JIRACHI
 # 36 "data/maps/MossdeepCity/scripts.pory"
     return
 # 37 "data/maps/MossdeepCity/scripts.pory"
