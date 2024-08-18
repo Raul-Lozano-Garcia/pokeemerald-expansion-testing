@@ -17,6 +17,7 @@ PetalburgWoods_OnResume:
 
 PetalburgWoods_EventScript_RanFromCelebi:
 	setflag FLAG_RECEIVED_GS_BALL
+	clearflag FLAG_RAN_CELEBI
     return
 
 PetalburgWoods_EventScript_TryRemoveCelebi:
@@ -507,7 +508,6 @@ script PetalburgWoods_EventScript_Celebi {
     msgbox("It's look like the GS BALL would fit on\n"
 			"it. Want to put the GS BALL here?", MSGBOX_YESNO)
 	if(var(VAR_RESULT) == YES){
-		clearflag(FLAG_RAN_CELEBI)
 		msgbox("{PLAYER} put in the GS BALL.")
 		release
 		showobjectat(15, MAP_PETALBURG_WOODS)
@@ -515,7 +515,7 @@ script PetalburgWoods_EventScript_Celebi {
 		delay(60)
 		fadescreenswapbuffers(FADE_TO_WHITE)
 		playse(SE_MUGSHOT)
-		delay(180)
+		delay(150)
 		showobjectat(14, MAP_PETALBURG_WOODS)
 		hideobjectat(15, MAP_PETALBURG_WOODS)
 		fadescreenswapbuffers(FADE_FROM_WHITE)
@@ -556,7 +556,6 @@ script PetalburgWoods_EventScript_Celebi {
 		releaseall
 	} else {
 		releaseall
-        end
 	}
 }
 

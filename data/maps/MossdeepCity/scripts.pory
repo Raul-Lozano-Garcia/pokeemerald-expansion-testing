@@ -237,7 +237,6 @@ MossdeepCity_EventScript_Man::
 	lock
 	faceplayer
 	msgbox MossdeepCity_Text_SurfExhilarating, MSGBOX_DEFAULT
-	braillemsgbox MossdeepCity_Braille_WishMaker
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
@@ -393,9 +392,11 @@ MossdeepCity_Text_LifeNeedsSeaToLive:
 	.string "Yes, like the very shoreline here.$"
 
 MossdeepCity_Text_SurfExhilarating:
-	.string "Near the coast I found this rock\n"
-	.string "fragment, which has some strange\p"
-	.string "symbols engraved on it.$"
+	.string "A voyage on a ship is fine.\p"
+	.string "But crossing the sea with POKéMON\n"
+	.string "using SURF…\p"
+	.string "Now that's an exhilarating trip!\n"
+	.string "Wouldn't you agree, youngster?$"
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
 	.string "This rock has a special meaning to\n"
@@ -462,14 +463,15 @@ script MossdeepCity_EventScript_WhiteRock {
         call(Common_ShowEasyChatScreen)
 		if(var(VAR_RESULT) == 1){
 			if(var(VAR_0x8004) == 3){
-				applymovement(18, Movement_KecleonAppears)
-				waitmovement(0)
+				fadescreenswapbuffers(FADE_TO_WHITE)
+				playse(SE_MUGSHOT)
+				delay(150)
+				showobjectat(18, MAP_MOSSDEEP_CITY)
+				fadescreenswapbuffers(FADE_FROM_WHITE)
 				applymovement(OBJ_EVENT_ID_PLAYER, WhiteRock_PlayerMovement)
 				playse(SE_PIN)
 				waitmovement(0)
 				delay(60)
-				applymovement(18, WhiteRock_JirachiMovement)
-				waitmovement(0)
 				playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
 				waitmoncry
 				setwildbattle(SPECIES_JIRACHI, 30)
@@ -479,10 +481,10 @@ script MossdeepCity_EventScript_WhiteRock {
 				clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
 				specialvar(VAR_RESULT, GetBattleOutcome)
 				if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
-					clearflag(FLAG_RAN_JIRACHI)
+					setflag(FLAG_WHITE_ROCK)
 				}
 				elif(var(VAR_RESULT) == B_OUTCOME_WON){
-					clearflag(FLAG_RAN_JIRACHI)
+					setflag(FLAG_WHITE_ROCK)
 					setvar(VAR_0x8004, SPECIES_JIRACHI)
 					fadescreenswapbuffers(FADE_TO_BLACK)
 					removeobject(18)
@@ -491,6 +493,7 @@ script MossdeepCity_EventScript_WhiteRock {
 					msgbox(gText_LegendaryFlewAway, MSGBOX_DEFAULT)
 				}
 				else {
+					setflag(FLAG_WHITE_ROCK)
 					setflag(FLAG_RAN_JIRACHI)
 					setvar(VAR_0x8004, SPECIES_JIRACHI)
 					fadescreenswapbuffers(FADE_TO_BLACK)
@@ -499,7 +502,6 @@ script MossdeepCity_EventScript_WhiteRock {
 					bufferspeciesname(STR_VAR_1, VAR_0x8004)
 					msgbox(gText_LegendaryFlewAway, MSGBOX_DEFAULT)
 				}
-				setflag(FLAG_WHITE_ROCK)
 				releaseall
 			} else {
 				msgbox("You made a wish.")
@@ -513,10 +515,13 @@ script MossdeepCity_EventScript_WhiteRock {
     }
 }
 
-movement WhiteRock_PlayerMovement {
-	emote_exclamation_mark
+script MossdeepCity_EventScript_WhiteRock_Phrase {
+	lockall
+	braillemsgbox(MossdeepCity_Braille_WishMaker)
+	releaseall
+	end
 }
 
-movement WhiteRock_JirachiMovement {
-    walk_down
+movement WhiteRock_PlayerMovement {
+	emote_exclamation_mark
 }
