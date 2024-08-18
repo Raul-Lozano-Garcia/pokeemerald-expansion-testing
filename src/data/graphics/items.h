@@ -2009,6 +2009,9 @@ const u32 gItemIconPalette_TeraOrb[] = INCBIN_U32("graphics/items/icon_palettes/
 const u32 gItemIcon_TinyBambooShoot[] = INCBIN_U32("graphics/items/icons/tiny_bamboo_shoot.4bpp.lz");
 const u32 gItemIconPalette_TinyBambooShoot[] = INCBIN_U32("graphics/items/icon_palettes/tiny_bamboo_shoot.gbapal.lz");
 
+const u32 gItemIcon_GSBall[] = INCBIN_U32("graphics/items/icons/gs_ball.4bpp.lz");
+const u32 gItemIconPalette_GSBall[] = INCBIN_U32("graphics/items/icon_palettes/gs_ball.gbapal.lz");
+
 // Tera Shards
 
 const u32 gItemIcon_TeraShard[] = INCBIN_U32("graphics/items/icons/tera_shard.4bpp.lz");

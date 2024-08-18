@@ -921,6 +921,7 @@
 #define ITEM_TEA 755
 #define ITEM_RUBY 756
 #define ITEM_SAPPHIRE 757
+#define ITEM_GS_BALL 830
 
 // GEN IX ITEMS
 #define ITEM_ABILITY_SHIELD 758
@@ -1005,7 +1006,7 @@
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 830
+#define ITEMS_COUNT 831
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
