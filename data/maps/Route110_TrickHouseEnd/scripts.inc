@@ -131,7 +131,10 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::
 	msgbox Route110_TrickHouseEnd_Text_AllNightSettingUpArrows, MSGBOX_DEFAULT
-	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
+	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisSpecialReward, MSGBOX_DEFAULT
+	giveitem ITEM_GS_BALL
+	setflag FLAG_RECEIVED_GS_BALL
+	msgbox Route110_TrickHouseEnd_Text_TakeThisToo, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_PP_MAX
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
@@ -337,6 +340,17 @@ Route110_TrickHouseEnd_Text_LeavingOnJourney:
 Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward:
 	.string "Fine!\n"
 	.string "You have earned this reward!$"
+
+Route110_TrickHouseEnd_Text_YouHaveEarnedThisSpecialReward:
+	.string "Fine!\n"
+	.string "You have earned this special reward!$"
+
+Route110_TrickHouseEnd_Text_TakeThisToo:
+	.string "This is a mysterious Ball given to me by\n" 
+	.string "an old friend from the JOTHO region. I\p"
+	.string "have no idea what it's for, but I'm sure\n"
+	.string "you'll find out.\p"  
+	.string "Take this too.$"
 
 Route110_TrickHouseEnd_Text_NoRoomForThis:
 	.string "What? Have you no room for this?\n"

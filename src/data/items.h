@@ -13031,6 +13031,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_AbilityShield,
     },
 
+    [ITEM_GS_BALL] =
+    {
+        .name = _("GS Ball"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "The mysterious Ball."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_GSBall,
+        .iconPalette = gItemIconPalette_GSBall,
+    },
+
 // GEN 9 ITEMS
 
     [ITEM_CLEAR_AMULET] =
