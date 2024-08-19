@@ -1132,6 +1132,8 @@ extern const u32 gItemIcon_LuckIncense[];
 extern const u32 gItemIconPalette_LuckIncense[];
 extern const u32 gItemIcon_PureIncense[];
 extern const u32 gItemIconPalette_PureIncense[];
+extern const u32 gItemIcon_ExoticIncense[];
+extern const u32 gItemIconPalette_ExoticIncense[];
 // Contest Scarves
 extern const u32 gItemIcon_Scarf[];
 extern const u32 gItemIconPalette_RedScarf[];
