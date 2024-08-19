@@ -7333,6 +7333,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_PureIncense,
     },
 
+    [ITEM_EXOTIC_INCENSE] =
+    {
+        .name = HANDLE_EXPANDED_ITEM_NAME("ExoticIncense", "Exotic Incense"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Incense capable of\n"
+            "attracting species\n"
+            "from other regions."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_ExoticIncense,
+        .iconPic = gItemIcon_ExoticIncense,
+        .iconPalette = gItemIconPalette_ExoticIncense,
+    },
+
 // Contest Scarves
 
     [ITEM_RED_SCARF] =

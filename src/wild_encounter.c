@@ -377,6 +377,8 @@ static u16 GetCurrentMapWildMonHeaderId(void)
                 i += alteringCaveId;
             }
 
+            i += VarGet(VAR_ENCOUNTER_TABLE);
+
             return i;
         }
     }
