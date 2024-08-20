@@ -1445,7 +1445,14 @@ void ItemUseOutOfBattle_ExoticIncense(u8 taskId)
         if(var == 1)
         {
             PlaySE(SE_M_SWEET_SCENT);
-            StringExpandPlaceholders(gStringVar4, gText_ExoticIncenseOn);
+            if(FlagGet(FLAG_EXOTIC_INCENSE) == FALSE)
+            {
+                StringExpandPlaceholders(gStringVar4, gText_ExoticIncenseFail);
+            }
+            else
+            {
+                StringExpandPlaceholders(gStringVar4, gText_ExoticIncenseOn);
+            }
         }
         else
         {

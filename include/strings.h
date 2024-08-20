@@ -3053,5 +3053,6 @@ extern const u8 gText_PM[];
 // Custom
 extern const u8 gText_ExoticIncenseOn[];
 extern const u8 gText_ExoticIncenseOff[];
+extern const u8 gText_ExoticIncenseFail[];
 
 #endif // GUARD_STRINGS_H

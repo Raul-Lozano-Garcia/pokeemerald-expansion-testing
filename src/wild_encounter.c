@@ -367,6 +367,16 @@ static u16 GetCurrentMapWildMonHeaderId(void)
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_WOODS) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_WOODS))
+            {
+                i += VarGet(VAR_ENCOUNTER_TABLE);
+                FlagSet(FLAG_EXOTIC_INCENSE);
+            }
+            else
+            {
+                FlagClear(FLAG_EXOTIC_INCENSE);
+            }
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
             {
@@ -376,8 +386,6 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
                 i += alteringCaveId;
             }
-
-            i += VarGet(VAR_ENCOUNTER_TABLE);
 
             return i;
         }
