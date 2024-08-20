@@ -514,6 +514,8 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex, MSGBOX_DEFAULT
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
+	giveitem ITEM_EXOTIC_INCENSE
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainExoticIncense, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_RIVAL, LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer
 	waitmovement 0
@@ -758,7 +760,18 @@ LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "Whenever my kid catches a rare POKéMON\n"
 	.string "and records its data in the POKéDEX,\l"
 	.string "why, {RIVAL} looks for me while I'm out\l"
-	.string "doing fieldwork, and shows me.$"
+	.string "doing fieldwork, and shows me.\p"
+	.string "Take this too.$"
+
+LittlerootTown_ProfessorBirchsLab_Text_ExplainExoticIncense:
+	.string "In collaboration with PRETTY PETAL\n"
+	.string "FLOWER SHOP, we have managed to\p"
+	.string "develop this incense that seems to\n"
+	.string "attract species from other regions when\p"
+	.string "it's active.\l"
+	.string "It's only a prototype and it doesn't\n"
+	.string "work always, but I hope it will help you\p"
+	.string "to complete your POKéDEX.$" 
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "PROF. BIRCH: Countless POKéMON\n"
