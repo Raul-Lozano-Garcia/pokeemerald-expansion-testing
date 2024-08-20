@@ -16713,7 +16713,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicYOffset = 15,
         .frontAnimFrames = sAnims_Porygon2,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 9,
         .backPic = gMonBackPic_Porygon2,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,

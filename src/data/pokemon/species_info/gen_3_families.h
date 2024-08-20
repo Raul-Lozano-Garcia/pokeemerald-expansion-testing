@@ -7127,7 +7127,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicYOffset = 11,
         .frontAnimFrames = sAnims_Barboach,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
-        .enemyMonElevation = 7,
         .backPic = gMonBackPic_Barboach,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
