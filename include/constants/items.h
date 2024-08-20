@@ -513,6 +513,7 @@
 #define ITEM_ROSE_INCENSE 410
 #define ITEM_LUCK_INCENSE 411
 #define ITEM_PURE_INCENSE 412
+#define ITEM_EXOTIC_INCENSE 831
 
 // Contest Scarves
 #define ITEM_RED_SCARF 413
@@ -1006,7 +1007,7 @@
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 831
+#define ITEMS_COUNT 832
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

@@ -1188,6 +1188,9 @@ const u32 gItemIconPalette_LuckIncense[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_PureIncense[] = INCBIN_U32("graphics/items/icons/pure_incense.4bpp.lz");
 const u32 gItemIconPalette_PureIncense[] = INCBIN_U32("graphics/items/icon_palettes/pure_incense.gbapal.lz");
 
+const u32 gItemIcon_ExoticIncense[] = INCBIN_U32("graphics/items/icons/exotic_incense.4bpp.lz");
+const u32 gItemIconPalette_ExoticIncense[] = INCBIN_U32("graphics/items/icon_palettes/exotic_incense.gbapal.lz");
+
 // Contest Scarves
 
 const u32 gItemIcon_Scarf[] = INCBIN_U32("graphics/items/icons/scarf.4bpp.lz");

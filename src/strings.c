@@ -1838,3 +1838,6 @@ const u8 gText_Fertilize[] = _("FERTILIZE");
 const u8 gText_PlantBerry[] = _("PLANT BERRY");
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
+const u8 gText_ExoticIncenseOn[] = _("The Exotic Incense has been used.{PAUSE_UNTIL_PRESS}");
+const u8 gText_ExoticIncenseOff[] = _("The Exotic Incense stopped being used.{PAUSE_UNTIL_PRESS}");
+const u8 gText_ExoticIncenseFail[] = _("The Exotic Incense has been used,\nbut it seems to have had no effect.{PAUSE_UNTIL_PRESS}");                    

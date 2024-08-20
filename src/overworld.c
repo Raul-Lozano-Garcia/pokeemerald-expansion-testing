@@ -2956,6 +2956,14 @@ bool32 IsSendingKeysOverCable(void)
         return TRUE;
 }
 
+bool32 Overworld_IsExoticIncenseAllowed(void)
+{
+    if (gMapHeader.mapType == MAP_TYPE_INDOOR)
+        return FALSE;
+    else
+        return TRUE;
+}
+
 static u32 GetLinkSendQueueLength(void)
 {
     if (gWirelessCommType != 0)

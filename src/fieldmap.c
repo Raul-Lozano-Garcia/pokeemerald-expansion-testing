@@ -17,6 +17,7 @@
 #include "constants/rgb.h"
 #include "constants/metatile_behaviors.h"
 #include "wild_encounter.h"
+#include "event_data.h"
 
 struct ConnectionFlags
 {
@@ -67,6 +68,7 @@ const struct MapHeader *const GetMapHeaderFromConnection(const struct MapConnect
 
 void InitMap(void)
 {
+    VarSet(VAR_ENCOUNTER_TABLE, 0);
     InitMapLayoutData(&gMapHeader);
     SetOccupiedSecretBaseEntranceMetatiles(gMapHeader.events);
     RunOnLoadMapScript();
@@ -74,6 +76,7 @@ void InitMap(void)
 
 void InitMapFromSavedGame(void)
 {
+    VarSet(VAR_ENCOUNTER_TABLE, 0);
     InitMapLayoutData(&gMapHeader);
     InitSecretBaseAppearance(FALSE);
     SetOccupiedSecretBaseEntranceMetatiles(gMapHeader.events);

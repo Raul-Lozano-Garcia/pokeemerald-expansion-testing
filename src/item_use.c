@@ -1435,6 +1435,44 @@ void ItemUseOutOfBattle_CannotUse(u8 taskId)
     DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
 }
 
+void ItemUseOutOfBattle_ExoticIncense(u8 taskId)
+{
+    if(Overworld_IsExoticIncenseAllowed() == TRUE)
+    {
+        u16 var = VarGet(VAR_ENCOUNTER_TABLE);
+        var = (var == 0) ? (var + 1) : (var - 1);
+        VarSet(VAR_ENCOUNTER_TABLE, var);
+        if(var == 1)
+        {
+            PlaySE(SE_M_SWEET_SCENT);
+            if(FlagGet(FLAG_EXOTIC_INCENSE) == FALSE)
+            {
+                StringExpandPlaceholders(gStringVar4, gText_ExoticIncenseFail);
+            }
+            else
+            {
+                StringExpandPlaceholders(gStringVar4, gText_ExoticIncenseOn);
+            }
+        }
+        else
+        {
+            PlaySE(SE_CONTEST_CONDITION_LOSE);
+            StringExpandPlaceholders(gStringVar4, gText_ExoticIncenseOff);
+        }
+
+        if (!gTasks[taskId].tUsingRegisteredKeyItem)
+        {
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+        }
+        else
+        {
+            DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
+        }
+    }
+    else
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+}
+
 static bool32 IsValidLocationForVsSeeker(void)
 {
     u16 mapGroup = gSaveBlock1Ptr->location.mapGroup;
