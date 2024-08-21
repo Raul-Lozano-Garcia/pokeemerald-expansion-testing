@@ -39,6 +39,10 @@ FortreeCity_Mart_EventScript_Boy::
 	msgbox FortreeCity_Mart_Text_RareCandyMakesMonGrow, MSGBOX_NPC
 	end
 
+FortreeCity_Mart_EventScript_Man::
+	msgbox FortreeCity_Mart_Text_BuyTenOrMoreBalls, MSGBOX_NPC
+	end
+
 FortreeCity_Mart_Text_SuperRepelBetter:
 	.string "SUPER REPEL lasts a long time,\n"
 	.string "and it gets the job done.\p"
@@ -55,3 +59,8 @@ FortreeCity_Mart_Text_RareCandyMakesMonGrow:
 	.string "A RARE CANDY makes a POKéMON grow\n"
 	.string "immediately by one level.$"
 
+FortreeCity_Mart_Text_BuyTenOrMoreBalls:
+	.string "I bet you know what happens if you\n"
+	.string "buy 10 or more POKé BALLS, but have you\p"
+	.string "tried to do the same with ULTRA BALLS?\l"
+	.string "You will get something even better!$"
