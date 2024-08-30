@@ -107,7 +107,8 @@ FallarborTown_CozmosHouse_Text_PleaseUseThisTM:
 FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch:
 	.string "PROF. COZMO: Oh, I can't believe it.\n"
 	.string "This is really, really great!\p"
-	.string "This is really going to help my research!$"
+	.string "This is really going to help my research!\n"
+	.string "Come back later when I'm done.$"
 
 FallarborTown_CozmosHouse_Text_CrushedWithDisappointment:
 	.string "PROF. COZMO: Oh, but…\n"
@@ -153,7 +154,7 @@ FallarborTown_CozmosHouse_Text_GaveAuroraTicket:
 
 mapscripts FallarborTown_CozmosHouse_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-        if (flag(FLAG_RECEIVED_TM_RETURN) && flag(FLAG_IS_CHAMPION)) {
+        if (flag(FLAG_RECEIVED_TM_RETURN) && flag(FLAG_SYS_GAME_CLEAR)) {
 			setflag(FLAG_GIVE_AURORA_TICKET)
 		}
     }
