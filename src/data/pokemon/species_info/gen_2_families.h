@@ -3548,6 +3548,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     }
 
     [SPECIES_UNOWN]       = UNOWN_MISC_INFO(A,               FALSE, 24, 40, 15, 24, 48,  8 ),
+    [SPECIES_UNOWN_A]     = UNOWN_MISC_INFO(A,               FALSE, 24, 40, 15, 24, 48,  8 ),
     [SPECIES_UNOWN_B]     = UNOWN_MISC_INFO(B,               TRUE,  24, 32, 16, 40, 48,  9 ),
     [SPECIES_UNOWN_C]     = UNOWN_MISC_INFO(C,               TRUE,  32, 32, 16, 48, 56,  6 ),
     [SPECIES_UNOWN_D]     = UNOWN_MISC_INFO(D,               TRUE,  32, 32, 16, 40, 48,  8 ),

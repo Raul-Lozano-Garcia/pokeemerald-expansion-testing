@@ -203,7 +203,7 @@ u16 GetIconSpeciesNoPersonality(u16 species)
     species = SanitizeSpeciesId(species);
 
     if (MailSpeciesToSpecies(species, &species) == SPECIES_UNOWN)
-        return species += SPECIES_UNOWN_B; // TODO
+        return species += SPECIES_UNOWN_A; // TODO
     return GetIconSpecies(species, 0);
 }
 

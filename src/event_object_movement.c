@@ -1891,7 +1891,7 @@ static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u16 species, 
     {
     case SPECIES_UNOWN: // Letters >A are defined as species >= NUM_SPECIES, so are not contiguous with A
         form %= NUM_UNOWN_FORMS;
-        graphicsInfo = &gSpeciesInfo[form ? SPECIES_UNOWN_B + form - 1 : species].overworldData;
+        graphicsInfo = &gSpeciesInfo[form ? SPECIES_UNOWN_A + form - 1 : species].overworldData;
         break;
     default:
         graphicsInfo = &gSpeciesInfo[species].overworldData;
