@@ -1193,8 +1193,8 @@ static const struct SpriteFrameImage sPicTable_Ball_QUICK[] = {
 static const struct SpriteFrameImage sPicTable_Ball_CHERISH[] = {
     POKEBALL_PIC_FRAMES(Cherish),
 };
-static const struct SpriteFrameImage sPicTable_Ball_PARK[] = {
-    POKEBALL_PIC_FRAMES(Park),
+static const struct SpriteFrameImage sPicTable_Ball_SHINY[] = {
+    POKEBALL_PIC_FRAMES(Shiny),
 };
 static const struct SpriteFrameImage sPicTable_Ball_FAST[] = {
     POKEBALL_PIC_FRAMES(Fast),

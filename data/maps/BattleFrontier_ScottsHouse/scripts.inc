@@ -52,6 +52,9 @@ BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
 	msgbox BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols, MSGBOX_DEFAULT
 	giveitem ITEM_STARF_BERRY
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull
+	giveitem ITEM_SHINY_BALL
+	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BallPocketFull
+	msgbox BattleFrontier_ScottsHouse_Text_IWonItInLottery, MSGBOX_DEFAULT
 	setflag FLAG_COLLECTED_ALL_GOLD_SYMBOLS
 	setflag FLAG_TEMP_4
 	release
@@ -59,6 +62,11 @@ BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
 
 BattleFrontier_ScottsHouse_EventScript_BerryPocketFull::
 	msgbox BattleFrontier_ScottsHouse_Text_BerryPocketStuffed, MSGBOX_DEFAULT
+	release
+	end
+
+BattleFrontier_ScottsHouse_EventScript_BallPocketFull::
+	msgbox BattleFrontier_ScottsHouse_Text_BallPocketStuffed, MSGBOX_DEFAULT
 	release
 	end
 
@@ -313,7 +321,7 @@ BattleFrontier_ScottsHouse_Text_YouveCollectedAllGoldSymbols:
 	.string "… … … … … …\p"
 	.string "{PLAYER}, you've got to accept this!\p"
 	.string "I think you will be able to\n"
-	.string "appreciate the value of my gift!$"
+	.string "appreciate the value of my gifts!$"
 
 BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
 	.string "I must say I have the gift of knowing\n"
@@ -324,6 +332,14 @@ BattleFrontier_ScottsHouse_Text_SoGladIBroughtYouHere:
 BattleFrontier_ScottsHouse_Text_BerryPocketStuffed:
 	.string "Your BERRY POCKET seems to\n"
 	.string "be stuffed.$"
+
+BattleFrontier_ScottsHouse_Text_BallPocketStuffed:
+	.string "Your BALL POCKET seems to\n"
+	.string "be stuffed.$"
+
+BattleFrontier_ScottsHouse_Text_IWonItInLottery:
+	.string "I won this SHINY BALL in the lottery.\n"
+	.string "Maybe you should try your luck too.$"
 
 BattleFrontier_ScottsHouse_Text_Beat50TrainersInARow:
 	.string "SCOTT: Oh, I heard about you!\n"

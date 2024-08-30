@@ -549,19 +549,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_SportBall,
     },
 
-    [ITEM_PARK_BALL] =
+    [ITEM_SHINY_BALL] =
     {
-        .name = _("Park Ball"),
+        .name = _("Shiny Ball"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A special Ball for\n"
-            "the Pal Park."),
+            "A rare Ball that\n"
+            "transforms any\n"
+            "Pokémon into shiny."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
-        .secondaryId = ITEM_PARK_BALL - FIRST_BALL,
-        .iconPic = gItemIcon_ParkBall,
-        .iconPalette = gItemIconPalette_ParkBall,
+        .secondaryId = ITEM_SHINY_BALL - FIRST_BALL,
+        .iconPic = gItemIcon_ShinyBall,
+        .iconPalette = gItemIconPalette_ShinyBall,
     },
 
     [ITEM_BEAST_BALL] =

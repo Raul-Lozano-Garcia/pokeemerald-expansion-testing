@@ -76,8 +76,8 @@ const u32 gItemIconPalette_SafariBall[] = INCBIN_U32("graphics/items/icon_palett
 const u32 gItemIcon_SportBall[] = INCBIN_U32("graphics/items/icons/sport_ball.4bpp.lz");
 const u32 gItemIconPalette_SportBall[] = INCBIN_U32("graphics/items/icon_palettes/sport_ball.gbapal.lz");
 
-const u32 gItemIcon_ParkBall[] = INCBIN_U32("graphics/items/icons/park_ball.4bpp.lz");
-const u32 gItemIconPalette_ParkBall[] = INCBIN_U32("graphics/items/icon_palettes/park_ball.gbapal.lz");
+const u32 gItemIcon_ShinyBall[] = INCBIN_U32("graphics/items/icons/shiny_ball.4bpp.lz");
+const u32 gItemIconPalette_ShinyBall[] = INCBIN_U32("graphics/items/icon_palettes/shiny_ball.gbapal.lz");
 
 const u32 gItemIcon_BeastBall[] = INCBIN_U32("graphics/items/icons/beast_ball.4bpp.lz");
 const u32 gItemIconPalette_BeastBall[] = INCBIN_U32("graphics/items/icon_palettes/beast_ball.gbapal.lz");
