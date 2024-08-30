@@ -35,7 +35,7 @@ const struct ObjectEventGraphicsInfo gPokeballGraphics[POKEBALL_COUNT] = {
     POKEBALL_GFX_INFO(HEAL),
     POKEBALL_GFX_INFO(QUICK),
     POKEBALL_GFX_INFO(CHERISH),
-    POKEBALL_GFX_INFO(PARK),
+    POKEBALL_GFX_INFO(SHINY),
     // Gen II/Johto Apricorn pokeballs
     POKEBALL_GFX_INFO(FAST),
     POKEBALL_GFX_INFO(LEVEL),

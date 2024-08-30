@@ -2186,7 +2186,7 @@ u32 GetUnownSpeciesId(u32 personality)
 
     if (unownLetter == 0)
         return SPECIES_UNOWN;
-    return unownLetter + SPECIES_UNOWN_B - 1;
+    return unownLetter + SPECIES_UNOWN_A - 1;
 }
 
 void SetMultiuseSpriteTemplateToPokemon(u16 speciesTag, u8 battlerPosition)

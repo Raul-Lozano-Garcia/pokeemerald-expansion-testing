@@ -71,7 +71,7 @@ static u16 GetBattlerPokeballItemId(u8 battlerId);
 #define GFX_TAG_DREAM_BALL   55021
 #define GFX_TAG_SAFARI_BALL  55022
 #define GFX_TAG_SPORT_BALL   55023
-#define GFX_TAG_PARK_BALL    55024
+#define GFX_TAG_SHINY_BALL   55024
 #define GFX_TAG_BEAST_BALL   55025
 #define GFX_TAG_CHERISH_BALL 55026
 
@@ -101,7 +101,7 @@ const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
     [BALL_DREAM]   = {gBallGfx_Dream,   384, GFX_TAG_DREAM_BALL},
     [BALL_SAFARI]  = {gBallGfx_Safari,  384, GFX_TAG_SAFARI_BALL},
     [BALL_SPORT]   = {gBallGfx_Sport,   384, GFX_TAG_SPORT_BALL},
-    [BALL_PARK]    = {gBallGfx_Park,    384, GFX_TAG_PARK_BALL},
+    [BALL_SHINY]   = {gBallGfx_Shiny,   384, GFX_TAG_SHINY_BALL},
     [BALL_BEAST]   = {gBallGfx_Beast,   384, GFX_TAG_BEAST_BALL},
     [BALL_CHERISH] = {gBallGfx_Cherish, 384, GFX_TAG_CHERISH_BALL},
 };
@@ -132,7 +132,7 @@ const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
     [BALL_DREAM]   = {gBallPal_Dream,   GFX_TAG_DREAM_BALL},
     [BALL_SAFARI]  = {gBallPal_Safari,  GFX_TAG_SAFARI_BALL},
     [BALL_SPORT]   = {gBallPal_Sport,   GFX_TAG_SPORT_BALL},
-    [BALL_PARK]    = {gBallPal_Park,    GFX_TAG_PARK_BALL},
+    [BALL_SHINY]   = {gBallPal_Shiny,   GFX_TAG_SHINY_BALL},
     [BALL_BEAST]   = {gBallPal_Beast,   GFX_TAG_BEAST_BALL},
     [BALL_CHERISH] = {gBallPal_Cherish, GFX_TAG_CHERISH_BALL},
 };
@@ -492,10 +492,10 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
         .affineAnims = sAffineAnim_BallRotate,
         .callback = SpriteCB_BallThrow,
     },
-    [BALL_PARK] =
+    [BALL_SHINY] =
     {
-        .tileTag = GFX_TAG_PARK_BALL,
-        .paletteTag = GFX_TAG_PARK_BALL,
+        .tileTag = GFX_TAG_SHINY_BALL,
+        .paletteTag = GFX_TAG_SHINY_BALL,
         .oam = &sBallOamData,
         .anims = sBallAnimSequences,
         .images = NULL,

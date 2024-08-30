@@ -132,10 +132,10 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::
 	msgbox Route110_TrickHouseEnd_Text_AllNightSettingUpArrows, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisSpecialReward, MSGBOX_DEFAULT
+	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_GS_BALL
 	setflag FLAG_RECEIVED_GS_BALL
 	msgbox Route110_TrickHouseEnd_Text_TakeThisToo, MSGBOX_DEFAULT
-	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_PP_MAX
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT

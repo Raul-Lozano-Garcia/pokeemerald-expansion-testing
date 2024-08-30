@@ -15056,6 +15056,8 @@ static void Cmd_handleballthrow(void)
 {
     CMD_ARGS();
 
+    int isShiny = 1;
+
     u16 ballMultiplier = 100;
     s8 ballAddition = 0;
 
@@ -15282,6 +15284,8 @@ static void Cmd_handleballthrow(void)
             MarkBattlerForControllerExec(gBattlerAttacker);
             TryBattleFormChange(gBattlerTarget, FORM_CHANGE_END_BATTLE);
             gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
+            if(gLastUsedItem == ITEM_SHINY_BALL)
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_IS_SHINY, &isShiny);  
             SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_POKEBALL, &gLastUsedItem);
 
             if (CalculatePlayerPartyCount() == PARTY_SIZE)
@@ -15315,7 +15319,7 @@ static void Cmd_handleballthrow(void)
                 maxShakes = BALL_3_SHAKES_SUCCESS;
             }
 
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_BALL || gLastUsedItem == ITEM_SHINY_BALL)
             {
                 shakes = maxShakes;
             }
@@ -15336,6 +15340,8 @@ static void Cmd_handleballthrow(void)
 
                 TryBattleFormChange(gBattlerTarget, FORM_CHANGE_END_BATTLE);
                 gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
+                if(gLastUsedItem == ITEM_SHINY_BALL)
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_IS_SHINY, &isShiny);  
                 SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_POKEBALL, &gLastUsedItem);
 
                 if (CalculatePlayerPartyCount() == PARTY_SIZE)

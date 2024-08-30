@@ -404,7 +404,7 @@ const u32 gObjectEventPic_DuskBall[] = INCBIN_U32("graphics/object_events/pics/m
 const u32 gObjectEventPic_HealBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_heal.4bpp");
 const u32 gObjectEventPic_QuickBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_quick.4bpp");
 const u32 gObjectEventPic_CherishBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_cherish.4bpp");
-const u32 gObjectEventPic_ParkBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_park.4bpp");
+const u32 gObjectEventPic_ShinyBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_shiny.4bpp");
 const u32 gObjectEventPic_FastBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_fast.4bpp");
 const u32 gObjectEventPic_LevelBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_level.4bpp");
 const u32 gObjectEventPic_LureBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_lure.4bpp");
@@ -439,7 +439,7 @@ const u16 gObjectEventPal_DuskBall[] = INCBIN_U16("graphics/object_events/pics/m
 const u16 gObjectEventPal_HealBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_heal.gbapal");
 const u16 gObjectEventPal_QuickBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_quick.gbapal");
 const u16 gObjectEventPal_CherishBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_cherish.gbapal");
-const u16 gObjectEventPal_ParkBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_park.gbapal");
+const u16 gObjectEventPal_ShinyBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_shiny.gbapal");
 // Gen II/Johto Apricorns
 const u16 gObjectEventPal_FastBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_fast.gbapal");
 const u16 gObjectEventPal_LevelBall[] = INCBIN_U16("graphics/object_events/pics/misc/ball_level.gbapal");

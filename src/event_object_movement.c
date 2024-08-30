@@ -524,7 +524,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_HealBall,              OBJ_EVENT_PAL_TAG_BALL_HEAL},
     {gObjectEventPal_QuickBall,             OBJ_EVENT_PAL_TAG_BALL_QUICK},
     {gObjectEventPal_CherishBall,           OBJ_EVENT_PAL_TAG_BALL_CHERISH},
-    {gObjectEventPal_ParkBall,              OBJ_EVENT_PAL_TAG_BALL_PARK},
+    {gObjectEventPal_ShinyBall,             OBJ_EVENT_PAL_TAG_BALL_SHINY},
     {gObjectEventPal_FastBall,              OBJ_EVENT_PAL_TAG_BALL_FAST},
     {gObjectEventPal_LevelBall,             OBJ_EVENT_PAL_TAG_BALL_LEVEL},
     {gObjectEventPal_LureBall,              OBJ_EVENT_PAL_TAG_BALL_LURE},
@@ -1891,7 +1891,7 @@ static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u16 species, 
     {
     case SPECIES_UNOWN: // Letters >A are defined as species >= NUM_SPECIES, so are not contiguous with A
         form %= NUM_UNOWN_FORMS;
-        graphicsInfo = &gSpeciesInfo[form ? SPECIES_UNOWN_B + form - 1 : species].overworldData;
+        graphicsInfo = &gSpeciesInfo[form ? SPECIES_UNOWN_A + form - 1 : species].overworldData;
         break;
     default:
         graphicsInfo = &gSpeciesInfo[species].overworldData;

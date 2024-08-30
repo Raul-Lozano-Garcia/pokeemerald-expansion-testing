@@ -621,6 +621,7 @@ static const u16 sWooperFormSpeciesIdTable[] = {
 #if P_FAMILY_UNOWN
 static const u16 sUnownFormSpeciesIdTable[] = {
     SPECIES_UNOWN,
+    SPECIES_UNOWN_A,
     SPECIES_UNOWN_B,
     SPECIES_UNOWN_C,
     SPECIES_UNOWN_D,

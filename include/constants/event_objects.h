@@ -397,7 +397,7 @@
 #define OBJ_EVENT_PAL_TAG_BALL_HEAL               0x115C
 #define OBJ_EVENT_PAL_TAG_BALL_QUICK              0x115D
 #define OBJ_EVENT_PAL_TAG_BALL_CHERISH            0x115E
-#define OBJ_EVENT_PAL_TAG_BALL_PARK               0x115F
+#define OBJ_EVENT_PAL_TAG_BALL_SHINY              0x115F
 // Gen II/Johto Apricorns
 #define OBJ_EVENT_PAL_TAG_BALL_FAST               0x1160
 #define OBJ_EVENT_PAL_TAG_BALL_LEVEL              0x1161

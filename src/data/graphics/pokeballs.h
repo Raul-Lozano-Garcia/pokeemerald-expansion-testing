@@ -70,8 +70,8 @@ const u32 gBallPal_Safari[] = INCBIN_U32("graphics/balls/safari.gbapal.lz");
 const u32 gBallGfx_Sport[] = INCBIN_U32("graphics/balls/sport.4bpp.lz");
 const u32 gBallPal_Sport[] = INCBIN_U32("graphics/balls/sport.gbapal.lz");
 
-const u32 gBallGfx_Park[] = INCBIN_U32("graphics/balls/park.4bpp.lz");
-const u32 gBallPal_Park[] = INCBIN_U32("graphics/balls/park.gbapal.lz");
+const u32 gBallGfx_Shiny[] = INCBIN_U32("graphics/balls/shiny.4bpp.lz");
+const u32 gBallPal_Shiny[] = INCBIN_U32("graphics/balls/shiny.gbapal.lz");
 
 const u32 gBallGfx_Beast[] = INCBIN_U32("graphics/balls/beast.4bpp.lz");
 const u32 gBallPal_Beast[] = INCBIN_U32("graphics/balls/beast.gbapal.lz");

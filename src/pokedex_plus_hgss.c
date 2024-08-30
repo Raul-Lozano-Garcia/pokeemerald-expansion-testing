@@ -5204,7 +5204,7 @@ static void PrintStatsScreen_Moves_Top(u8 taskId)
     }
     else if (selected < (numEggMoves + numLevelUpMoves + numTMHMMoves + numTutorMoves))
     {
-        PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gText_ThreeDashes, moves_x + 113, moves_y + 9);
+        PrintStatsScreenTextSmall(WIN_STATS_MOVES_TOP, gText_Tutor, moves_x + 113, moves_y + 9);
         item = ITEM_TEACHY_TV;
     }
     else

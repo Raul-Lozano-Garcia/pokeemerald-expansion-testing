@@ -66,6 +66,10 @@ RustboroCity_PokemonSchool_EventScript_Lass::
 	msgbox RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself, MSGBOX_NPC
 	end
 
+RustboroCity_PokemonSchool_EventScript_Girl::
+	msgbox RustboroCity_PokemonSchool_Text_GhostSpecialDarkPhysical, MSGBOX_NPC
+	end
+
 RustboroCity_PokemonSchool_EventScript_SchoolKidM::
 	msgbox RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry, MSGBOX_NPC
 	end
@@ -279,6 +283,12 @@ RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
 	.string "attack itself without meaning to.\p"
 	.string "But once it leaves battle, it will\n"
 	.string "return to normal.$"
+
+RustboroCity_PokemonSchool_Text_GhostSpecialDarkPhysical:
+	.string "POKéMON moves are physical or special\n"
+	.string "according to their type. For example,\p"
+	.string "all GHOST-type moves are special and\n"
+	.string "DARK-type moves are physical.$"
 
 RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry:
 	.string "A POKéMON holding a BERRY will heal\n"
