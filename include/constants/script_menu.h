@@ -52,7 +52,7 @@
 #define MULTI_UNUSED_41                    41
 #define MULTI_VENDING_MACHINE              42
 #define MULTI_MACH_BIKE_INFO               43
-#define MULTI_ACRO_BIKE_INFO               44
+#define MULTI_UNI_BIKE_INFO                44
 #define MULTI_SATISFACTION                 45
 #define MULTI_STERN_DEEPSEA                46
 #define MULTI_UNUSED_ASH_VENDOR            47 // Replaced by scrollable multichoice

@@ -12221,19 +12221,19 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MachBike,
     },
 
-    [ITEM_ACRO_BIKE] =
+    [ITEM_UNI_BIKE] =
     {
-        .name = _("Acro Bike"),
+        .name = _("Bike"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A folding bicycle\n"
-            "capable of jumps\n"
-            "and wheelies."),
+            "A bicycle capable\n"
+            "of jumps or\n"
+            "doubles your speed."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
-        .secondaryId = ACRO_BIKE,
+        .secondaryId = UNI_BIKE,
         .iconPic = gItemIcon_AcroBike,
         .iconPalette = gItemIconPalette_AcroBike,
     },
