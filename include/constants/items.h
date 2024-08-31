@@ -861,7 +861,7 @@
 // Misc. Key Items
 #define ITEM_BICYCLE 706
 #define ITEM_MACH_BIKE 707
-#define ITEM_ACRO_BIKE 708
+#define ITEM_UNI_BIKE 708
 #define ITEM_OLD_ROD 709
 #define ITEM_GOOD_ROD 710
 #define ITEM_SUPER_ROD 711
@@ -1054,7 +1054,7 @@
 
 // Secondary IDs for bikes
 #define MACH_BIKE 0
-#define ACRO_BIKE 1
+#define UNI_BIKE  1
 
 // Item parameters for EXP Candies
 #define EXP_100   1
