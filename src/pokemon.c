@@ -3743,6 +3743,7 @@ const u32 sExpCandyExperienceTable[] = {
     [EXP_3000 - 1] = 3000,
     [EXP_10000 - 1] = 10000,
     [EXP_30000 - 1] = 30000,
+    [EXP_1250000 - 1] = 1250000,
 };
 
 // Returns TRUE if the item has no effect on the Pokémon, FALSE otherwise
@@ -3762,7 +3763,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     u32 friendshipOnly = FALSE;
     u16 heldItem;
     u8 effectFlags;
-    s8 evChange;
+    s16 evChange;
     u16 evCount;
 
     // Get item hold effect

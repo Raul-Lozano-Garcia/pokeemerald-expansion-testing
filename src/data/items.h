@@ -2016,6 +2016,25 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ExpCandies,
     },
 
+    [ITEM_EXP_CANDY_MAX] =
+    {
+        .name = HANDLE_EXPANDED_ITEM_NAME("Exp.Candy Max", "Exp. Candy Max"),
+        .pluralName = HANDLE_EXPANDED_ITEM_NAME("Exp.Candies Max", "Exp. Candies Max"),
+        .price = 30000,
+        .holdEffectParam = EXP_1250000,
+        .description = COMPOUND_STRING(
+            "Gives the max\n"
+            "amount of Exp. to\n"
+            "a single Pokémon."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .effect = gItemEffect_RareCandy,
+        .flingPower = 30,
+        .iconPic = gItemIcon_DynamaxCandy,
+        .iconPalette = gItemIconPalette_DynamaxCandy,
+    },
+
     [ITEM_DYNAMAX_CANDY] =
     {
         .name = HANDLE_EXPANDED_ITEM_NAME("DynamaxCandy", "Dynamax Candy"),

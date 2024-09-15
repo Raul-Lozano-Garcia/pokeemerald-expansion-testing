@@ -2336,7 +2336,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 7;
+        task->tNumItems = 32;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2346,7 +2346,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 10;
+        task->tNumItems = 11;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2446,48 +2446,74 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_1] =
     {
-        gText_KissPoster16BP,
-        gText_KissCushion32BP,
-        gText_SmoochumDoll32BP,
-        gText_TogepiDoll48BP,
-        gText_MeowthDoll48BP,
-        gText_ClefairyDoll48BP,
-        gText_DittoDoll48BP,
-        gText_CyndaquilDoll80BP,
-        gText_ChikoritaDoll80BP,
-        gText_TotodileDoll80BP,
+        gText_KissPoster10BP,
+        gText_KissCushion10BP,
+        gText_SmoochumDoll10BP,
+        gText_TogepiDoll10BP,
+        gText_MeowthDoll10BP,
+        gText_ClefairyDoll10BP,
+        gText_DittoDoll10BP,
+        gText_CyndaquilDoll10BP,
+        gText_ChikoritaDoll10BP,
+        gText_TotodileDoll10BP,
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_DECOR_VENDOR_2] =
     {
-        gText_LaprasDoll128BP,
-        gText_SnorlaxDoll128BP,
-        gText_VenusaurDoll256BP,
-        gText_CharizardDoll256BP,
-        gText_BlastoiseDoll256BP,
+        gText_LaprasDoll10BP,
+        gText_SnorlaxDoll10BP,
+        gText_VenusaurDoll10BP,
+        gText_CharizardDoll10BP,
+        gText_BlastoiseDoll10BP,
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_VITAMIN_VENDOR] =
     {
-        gText_Protein1BP,
-        gText_Calcium1BP,
-        gText_Iron1BP,
-        gText_Zinc1BP,
-        gText_Carbos1BP,
-        gText_HpUp1BP,
+        gText_AbilityCapsule10BP,
+        gText_BottleCap5BP,
+        gText_GoldBottleCap15BP,
+        gText_HealthMochi5BP,
+        gText_MuscleMochi5BP,
+        gText_ResistMochi5BP,
+        gText_GeniusMochi5BP,
+        gText_CleverMochi5BP,
+        gText_SwiftMochi5BP,
+        gText_FreshStartMochi15BP,
+        gText_LonelyMint10BP,
+        gText_AdamantMint10BP,
+        gText_NaughtyMint10BP,
+        gText_BraveMint10BP,
+        gText_BoldMint10BP,
+        gText_ImpishMint10BP,
+        gText_LaxMint10BP,
+        gText_RelaxedMint10BP,
+        gText_ModestMint10BP,
+        gText_MildMint10BP,
+        gText_RashMint10BP,
+        gText_QuietMint10BP,
+        gText_CalmMint10BP,
+        gText_GentleMint10BP,
+        gText_CarefulMint10BP,
+        gText_SassyMint10BP,
+        gText_TimidMint10BP,
+        gText_HastyMint10BP,
+        gText_JollyMint10BP,
+        gText_NaiveMint10BP,
+        gText_SeriousMint10BP,
         gText_Exit
     },
     [SCROLL_MULTI_BF_EXCHANGE_CORNER_HOLD_ITEM_VENDOR] =
     {
-        gText_Leftovers48BP,
-        gText_WhiteHerb48BP,
-        gText_QuickClaw48BP,
-        gText_MentalHerb48BP,
-        gText_BrightPowder64BP,
-        gText_ChoiceBand64BP,
-        gText_KingsRock64BP,
-        gText_FocusBand64BP,
-        gText_ScopeLens64BP,
+        gText_Leftovers10BP,
+        gText_WhiteHerb10BP,
+        gText_QuickClaw10BP,
+        gText_MentalHerb10BP,
+        gText_BrightPowder10BP,
+        gText_ChoiceBand10BP,
+        gText_ChoiceSpecs10BP,
+        gText_KingsRock10BP,
+        gText_FocusBand10BP,
+        gText_ScopeLens10BP,
         gText_Exit
     },
     [SCROLL_MULTI_BERRY_POWDER_VENDOR] =
@@ -2520,30 +2546,30 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_1] =
     {
-        gText_Softboiled16BP,
+        gText_Softboiled10BP,
         gText_SeismicToss24BP,
         gText_DreamEater24BP,
         gText_MegaPunch24BP,
-        gText_MegaKick48BP,
-        gText_BodySlam48BP,
-        gText_RockSlide48BP,
-        gText_Counter48BP,
-        gText_ThunderWave48BP,
-        gText_SwordsDance48BP,
+        gText_MegaKick10BP,
+        gText_BodySlam10BP,
+        gText_RockSlide10BP,
+        gText_Counter10BP,
+        gText_ThunderWave10BP,
+        gText_SwordsDance10BP,
         gText_Exit
     },
     [SCROLL_MULTI_BF_MOVE_TUTOR_2] =
     {
-        gText_DefenseCurl16BP,
+        gText_DefenseCurl10BP,
         gText_Snore24BP,
         gText_MudSlap24BP,
         gText_Swift24BP,
         gText_IcyWind24BP,
-        gText_Endure48BP,
-        gText_PsychUp48BP,
-        gText_IcePunch48BP,
-        gText_ThunderPunch48BP,
-        gText_FirePunch48BP,
+        gText_Endure10BP,
+        gText_PsychUp10BP,
+        gText_IcePunch10BP,
+        gText_ThunderPunch10BP,
+        gText_FirePunch10BP,
         gText_Exit
     },
     [SCROLL_MULTI_SS_TIDAL_DESTINATION] =

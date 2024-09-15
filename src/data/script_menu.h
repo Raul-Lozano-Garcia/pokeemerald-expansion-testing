@@ -783,6 +783,32 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_HyperTraining[] =
+{
+    {gText_BottleCap},
+    {gText_GoldBottleCap},
+};
+
+static const struct MenuAction MultichoiceList_HyperTrainingStat[] =
+{
+    {gText_HP3},
+    {gText_Attack},
+    {gText_Defense},
+    {gText_SpAtk},
+    {gText_SpDef},
+    {gText_Speed},
+};
+
+static const struct MenuAction MultichoiceList_Candies[] =
+{
+    {gText_RareCandy},
+    {gText_ExpSCandy},
+    {gText_ExpMCandy},
+    {gText_ExpLCandy},
+    {gText_ExpXLCandy},
+    {gText_ExpMaxCandy},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -906,6 +932,9 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_HYPERTRAINING]              = MULTICHOICE(MultichoiceList_HyperTraining),
+    [MULTI_HYPERTRAINING_STAT]         = MULTICHOICE(MultichoiceList_HyperTrainingStat),
+    [MULTI_CANDIES]                    = MULTICHOICE(MultichoiceList_Candies),
 };
 
 const u8 *const gStdStrings[] =

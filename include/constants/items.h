@@ -142,6 +142,7 @@
 #define ITEM_EXP_CANDY_M 105
 #define ITEM_EXP_CANDY_L 106
 #define ITEM_EXP_CANDY_XL 107
+#define ITEM_EXP_CANDY_MAX 832
 #define ITEM_DYNAMAX_CANDY 108
 
 // Medicinal Flutes
@@ -1007,7 +1008,7 @@
 // HOPO BERRY
 // LEGEND PLATE
 
-#define ITEMS_COUNT 832
+#define ITEMS_COUNT 833
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
@@ -1062,6 +1063,7 @@
 #define EXP_3000  3
 #define EXP_10000 4
 #define EXP_30000 5
+#define EXP_1250000 6
 
 // Item type IDs (used to determine the exit callback)
 #define ITEM_USE_MAIL             0
