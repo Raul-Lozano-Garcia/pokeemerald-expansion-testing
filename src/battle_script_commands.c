@@ -1689,9 +1689,8 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         break;
     }
 
-    if (gProtectStructs[battlerAtk].usedMicleBerry)
+    if (gBattleStruct->usedMicleBerry & 1u << battlerAtk)
     {
-        gProtectStructs[battlerAtk].usedMicleBerry = FALSE;
         if (atkAbility == ABILITY_RIPEN)
             calc = (calc * 140) / 100;  // ripen gives 40% acc boost
         else
@@ -4686,7 +4685,8 @@ static void MoveValuesCleanUp(void)
     gIsCriticalHit = FALSE;
     gBattleScripting.moveEffect = 0;
     gBattleCommunication[MISS_TYPE] = 0;
-    gHitMarker &= ~HITMARKER_DESTINYBOND;
+    if (!gMultiHitCounter)
+        gHitMarker &= ~HITMARKER_DESTINYBOND;
     gHitMarker &= ~HITMARKER_SYNCHRONISE_EFFECT;
 }
 
@@ -6290,19 +6290,20 @@ static void Cmd_moveend(void)
             if (gMovesInfo[gCurrentMove].danceMove)
             {
                 u32 battler, nextDancer = 0;
-                bool32 turnOnHitmarker = FALSE;
+                bool32 hasDancerTriggered = FALSE;
 
                 for (battler = 0; battler < gBattlersCount; battler++)
                 {
                     if (gSpecialStatuses[battler].dancerUsedMove)
                     {
                         // in case a battler fails to act on a Dancer-called move
-                        turnOnHitmarker = TRUE;
+                        hasDancerTriggered = TRUE;
                         break;
                     }
                 }
 
                 if (!(gMoveResultFlags & (MOVE_RESULT_FAILED | MOVE_RESULT_DOESNT_AFFECT_FOE)
+                 || (gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE && !hasDancerTriggered)
                  || (!gSpecialStatuses[gBattlerAttacker].dancerUsedMove && gBattleStruct->bouncedMoveIsUsed)))
                 {   // Dance move succeeds
                     // Set target for other Dancer mons; set bit so that mon cannot activate Dancer off of its own move
@@ -6316,8 +6317,6 @@ static void Cmd_moveend(void)
                     {
                         if (GetBattlerAbility(battler) == ABILITY_DANCER && !gSpecialStatuses[battler].dancerUsedMove)
                         {
-                            if (turnOnHitmarker)
-                                gHitMarker |= HITMARKER_ATTACKSTRING_PRINTED;
                             if (!nextDancer || (gBattleMons[battler].speed < gBattleMons[nextDancer & 0x3].speed))
                                 nextDancer = battler | 0x4;
                         }
@@ -6417,7 +6416,6 @@ static void Cmd_moveend(void)
                 DebugPrintfLevel(MGBA_LOG_WARN, "savedTargetCount is greater than 0! More calls to SaveBattlerTarget than RestoreBattlerTarget!");
                 // #endif
             }
-
             gBattleStruct->targetsDone[gBattlerAttacker] = 0;
             gProtectStructs[gBattlerAttacker].targetAffected = FALSE;
             gProtectStructs[gBattlerAttacker].shellTrap = FALSE;
@@ -6438,6 +6436,9 @@ static void Cmd_moveend(void)
             gBattleStruct->poisonPuppeteerConfusion = FALSE;
             gBattleStruct->fickleBeamBoosted = FALSE;
             gBattleStruct->distortedTypeMatchups = 0;
+            gBattleStruct->usedMicleBerry &= ~(1u << gBattlerAttacker);
+            if (gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
+                gBattleStruct->pledgeMove = FALSE;
             if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
                 SetActiveGimmick(gBattlerAttacker, GIMMICK_NONE);
             if (B_CHARGE <= GEN_8 || moveType == TYPE_ELECTRIC)
@@ -7437,9 +7438,9 @@ static void Cmd_switchineffects(void)
 
 static void Cmd_trainerslidein(void)
 {
-    CMD_ARGS(u8 battler);
+    CMD_ARGS(u8 position);
 
-    u32 battler = GetBattlerForBattleScript(cmd->battler);
+    u32 battler = GetBattlerForBattleScript(cmd->position);
     BtlController_EmitTrainerSlide(battler, BUFFER_A);
     MarkBattlerForControllerExec(battler);
 
@@ -8928,29 +8929,41 @@ static bool32 ChangeOrderTargetAfterAttacker(void)
 {
     u32 i;
     u8 data[MAX_BATTLERS_COUNT];
+    u8 actionsData[MAX_BATTLERS_COUNT];
 
     if (GetBattlerTurnOrderNum(gBattlerAttacker) > GetBattlerTurnOrderNum(gBattlerTarget)
         || GetBattlerTurnOrderNum(gBattlerAttacker) + 1 == GetBattlerTurnOrderNum(gBattlerTarget))
         return FALSE;
 
     for (i = 0; i < gBattlersCount; i++)
+    {
         data[i] = gBattlerByTurnOrder[i];
+        actionsData[i] = gActionsByTurnOrder[i];
+    }
     if (GetBattlerTurnOrderNum(gBattlerAttacker) == 0 && GetBattlerTurnOrderNum(gBattlerTarget) == 2)
     {
         gBattlerByTurnOrder[1] = gBattlerTarget;
+        gActionsByTurnOrder[1] = actionsData[2];
         gBattlerByTurnOrder[2] = data[1];
+        gActionsByTurnOrder[2] = actionsData[1];
         gBattlerByTurnOrder[3] = data[3];
+        gActionsByTurnOrder[3] = actionsData[3];
     }
     else if (GetBattlerTurnOrderNum(gBattlerAttacker) == 0 && GetBattlerTurnOrderNum(gBattlerTarget) == 3)
     {
         gBattlerByTurnOrder[1] = gBattlerTarget;
+        gActionsByTurnOrder[1] = actionsData[3];
         gBattlerByTurnOrder[2] = data[1];
+        gActionsByTurnOrder[2] = actionsData[1];
         gBattlerByTurnOrder[3] = data[2];
+        gActionsByTurnOrder[3] = actionsData[2];
     }
     else // Attacker == 1, Target == 3
     {
         gBattlerByTurnOrder[2] = gBattlerTarget;
+        gActionsByTurnOrder[2] = actionsData[3];
         gBattlerByTurnOrder[3] = data[2];
+        gActionsByTurnOrder[3] = actionsData[2];
     }
     return TRUE;
 }
@@ -16668,7 +16681,7 @@ void BS_SetPledge(void)
     u32 i = 0;
     u32 k = 0;
 
-    if (gBattleStruct->pledgeMove)
+    if (gBattleStruct->pledgeMove && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE))
     {
         PrepareStringBattle(STRINGID_USEDMOVE, gBattlerAttacker);
         gHitMarker |= HITMARKER_ATTACKSTRING_PRINTED;
@@ -16697,6 +16710,8 @@ void BS_SetPledge(void)
     else if ((gChosenActionByBattler[partner] == B_ACTION_USE_MOVE)
           && gBattleTypeFlags & BATTLE_TYPE_DOUBLE
           && IsBattlerAlive(partner)
+          && GetBattlerTurnOrderNum(gBattlerAttacker) < GetBattlerTurnOrderNum(partner)
+          && !(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
           && gCurrentMove != partnerMove
           && gMovesInfo[partnerMove].effect == EFFECT_PLEDGE)
     {
@@ -16735,8 +16750,8 @@ void BS_SetPledge(void)
     }
     else
     {
+        gBattleStruct->pledgeMove = FALSE;
         gBattlescriptCurrInstr = cmd->jumpInstr;
-
     }
 }
 
@@ -17220,6 +17235,23 @@ void BS_TryTarShot(void)
     else
     {
         gDisableStructs[gBattlerTarget].tarShot = TRUE;
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+}
+
+void BS_JumpIfBlockedBySoundproof(void)
+{
+    NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
+    u32 battler = GetBattlerForBattleScript(cmd->battler);
+    if (gMovesInfo[gCurrentMove].soundMove && GetBattlerAbility(battler) == ABILITY_SOUNDPROOF)
+    {
+        gLastUsedAbility = ABILITY_SOUNDPROOF;
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+        RecordAbilityBattle(battler, gLastUsedAbility);
+        gBattlerAbility = battler;
+    }
+    else
+    {
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
 }

@@ -2168,6 +2168,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_RaticateAlolan,
         .iconPalIndex = 2,
         FOOTPRINT(Raticate)
+        OVERWORLD(
+            sPicTable_RaticateAlolan,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_RaticateAlolan,
+            gShinyOverworldPalette_RaticateAlolan
+        )
         .isTotem = TRUE,
         .isAlolanForm = TRUE,
         .levelUpLearnset = sRaticateAlolanLevelUpLearnset,
@@ -3512,6 +3520,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndexFemale = 2,
     #endif
         FOOTPRINT(Pikachu)
+        OVERWORLD(
+            sPicTable_Pikachu,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Pikachu,
+            gShinyOverworldPalette_Pikachu
+        )
         .cannotBeTraded = TRUE,
         .allPerfectIVs = TRUE,
         .levelUpLearnset = sPikachuLevelUpLearnset,
@@ -9482,11 +9498,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_SlowbroGalarian,
         .iconPalIndex = 0,
         FOOTPRINT(Slowbro)
-        OVERWORLD(
+        OVERWORLD_SET_ANIM(
             sPicTable_SlowbroGalarian,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
+            sAnimTable_Following_Asym,
             gOverworldPalette_SlowbroGalarian,
             gShinyOverworldPalette_SlowbroGalarian
         )
@@ -9829,11 +9846,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Farfetchd,
         .iconPalIndex = 1,
         FOOTPRINT(Farfetchd)
-        OVERWORLD(
+        OVERWORLD_SET_ANIM(
             sPicTable_Farfetchd,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_NONE,
+            sAnimTable_Following_Asym,
             gOverworldPalette_Farfetchd,
             gShinyOverworldPalette_Farfetchd
         )
@@ -12259,6 +12277,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_MarowakAlolan,
         .iconPalIndex = 1,
         FOOTPRINT(Marowak)
+        OVERWORLD(
+            sPicTable_MarowakAlolan,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_MarowakAlolan,
+            gShinyOverworldPalette_MarowakAlolan
+        )
         .isTotem = TRUE,
         .isAlolanForm = TRUE,
         .levelUpLearnset = sMarowakAlolanLevelUpLearnset,
@@ -16121,6 +16147,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndexFemale = 2,
     #endif
         FOOTPRINT(Eevee)
+        OVERWORLD(
+            sPicTable_Eevee,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Eevee,
+            gShinyOverworldPalette_Eevee
+        )
         .cannotBeTraded = TRUE,
         .allPerfectIVs = TRUE,
         .levelUpLearnset = sEeveeLevelUpLearnset,
