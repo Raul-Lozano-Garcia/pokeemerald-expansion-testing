@@ -6805,6 +6805,17 @@ u32 GetMonAffectionHearts(struct Pokemon *pokemon)
     return AFFECTION_NO_HEARTS;
 }
 
+u32 GetMonMaxFriendship(struct Pokemon *pokemon)
+{
+    return GetMonData(pokemon, MON_DATA_FRIENDSHIP, NULL);
+}
+
+void SetMonMaxFriendship(struct Pokemon *pokemon)
+{
+    u32 newFriendship = 255;
+    SetMonData(pokemon, MON_DATA_FRIENDSHIP, &newFriendship);
+}
+
 void UpdateMonPersonality(struct BoxPokemon *boxMon, u32 personality)
 {
     struct PokemonSubstruct0 *old0, *new0;

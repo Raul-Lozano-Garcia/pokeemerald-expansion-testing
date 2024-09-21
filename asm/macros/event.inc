@@ -2188,6 +2188,19 @@
 	.2byte \slot
 	.endm
 
+	@ Sets VAR_RESULT to TRUE if frienship is not maximized, or to
+	@ FALSE otherwise.
+	.macro canmaxfriendship slot:req
+	callnative CanMaxFriendship
+	.2byte \slot
+	.endm
+
+	@ Maximize a POKéMON frienship.
+	.macro maxfriendship slot:req
+	callnative MaxFriendship
+	.2byte \slot
+	.endm
+
 	@ Hyper Trains a stat.
 	.macro hypertrain stat:req, slot:req
 	callnative HyperTrain

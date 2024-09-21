@@ -1388,3 +1388,24 @@ script BattleFrontier_ExchangeServiceCorner_EventScript_Candies {
 	}
 	releaseall
 }
+
+script BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship {
+	lock
+    faceplayer
+    msgbox(format("I'm known as the best POKéMON masseuse in the world. I can make your POKéMON increase their friendship to the maximum with just one massage. And it's totally free! Do you want to try?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES){
+		msgbox(format("Choose a POKéMON give it the masseuse."))
+        special(ChoosePartyMon)
+        waitstate
+        canmaxfriendship(VAR_0x8004)
+		if(var(VAR_RESULT) == YES) {
+			maxfriendship(VAR_0x8004)
+			msgbox(format("The friendship of this POKéMON is now maximized! Don't thank me."))
+		} else {
+			msgbox(format("The friendship of this POKéMON is already at its peak. My massages won't do much good."))
+		}
+	} else {
+		msgbox(format("Come back when you want one of my amazing massages. See you!"))
+	}
+	releaseall
+}

@@ -2811,6 +2811,47 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Candies_35:
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_1
 
 
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship::
+# 1393 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	lock
+# 1394 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	faceplayer
+# 1395 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_0, MSGBOX_YESNO
+# 1396 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_2
+# 1408 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_4
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_1:
+# 1410 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	releaseall
+	return
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_2:
+# 1397 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_1
+# 1398 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	special ChoosePartyMon
+# 1399 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	waitstate
+# 1400 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	canmaxfriendship VAR_0x8004
+# 1401 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_5
+# 1405 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_3
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_1
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_5:
+# 1402 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	maxfriendship VAR_0x8004
+# 1403 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_2
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_1
+
+
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_0:
 # 1174 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Hello! I can hypertraining your POKéMON\n"
@@ -2931,3 +2972,31 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2:
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_3:
 # 1387 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Ok, never mind.$"
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_0:
+# 1395 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "I'm known as the best POKéMON masseuse\n"
+	.string "in the world. I can make your POKéMON\l"
+	.string "increase their friendship to the\l"
+	.string "maximum with just one massage. And it's\l"
+	.string "totally free! Do you want to try?$"
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_1:
+# 1397 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Choose a POKéMON give it the masseuse.$"
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_2:
+# 1403 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "The friendship of this POKéMON is now\n"
+	.string "maximized! Don't thank me.$"
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_3:
+# 1405 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "The friendship of this POKéMON is\n"
+	.string "already at its peak. My massages won't\l"
+	.string "do much good.$"
+
+BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_4:
+# 1408 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Come back when you want one of my\n"
+	.string "amazing massages. See you!$"

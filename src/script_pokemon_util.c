@@ -253,6 +253,26 @@ void CanHyperTrain(struct ScriptContext *ctx)
     }
 }
 
+void CanMaxFriendship(struct ScriptContext *ctx)
+{
+    u32 partyIndex = VarGet(ScriptReadHalfword(ctx));
+    u32 friendshipScore = GetMonMaxFriendship(&gPlayerParty[partyIndex]);
+    if (friendshipScore < MAX_FRIENDSHIP)
+    {
+        gSpecialVar_Result = TRUE;
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void MaxFriendship(struct ScriptContext *ctx)
+{
+    u32 partyIndex = VarGet(ScriptReadHalfword(ctx));
+    SetMonMaxFriendship(&gPlayerParty[partyIndex]);
+}
+
 void HyperTrain(struct ScriptContext *ctx)
 {
     u32 stat = ScriptReadByte(ctx);
