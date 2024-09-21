@@ -1547,21 +1547,26 @@ void DrawLevelUpWindowPg1(u16 windowId, u16 *statsBefore, u16 *statsAfter, u8 bg
                                      color,
                                      TEXT_SKIP_DRAW,
                                      sLvlUpStatStrings[i]);
-
+        if (abs(statsDiff[i]) >= 100)
+            x = 0;
+        else
+            x = 6;
         StringCopy(text, (statsDiff[i] >= 0) ? gText_Plus : gText_Dash);
         AddTextPrinterParameterized3(windowId,
                                      FONT_NORMAL,
-                                     56,
+                                     50 + x,
                                      15 * i,
                                      color,
                                      TEXT_SKIP_DRAW,
                                      text);
         if (abs(statsDiff[i]) <= 9)
             x = 18;
+        else if (abs(statsDiff[i]) >= 100)
+            x = 6;
         else
             x = 12;
 
-        ConvertIntToDecimalStringN(text, abs(statsDiff[i]), STR_CONV_MODE_LEFT_ALIGN, 2);
+        ConvertIntToDecimalStringN(text, abs(statsDiff[i]), STR_CONV_MODE_LEFT_ALIGN, 3);
         AddTextPrinterParameterized3(windowId,
                                      FONT_NORMAL,
                                      56 + x,
