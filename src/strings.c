@@ -1876,3 +1876,4 @@ const u8 gText_ExpMCandy[] = _("EXP. CANDIES M");
 const u8 gText_ExpLCandy[] = _("EXP. CANDIES L");
 const u8 gText_ExpXLCandy[] = _("EXP.  CANDIES XL");
 const u8 gText_ExpMaxCandy[] = _("EXP. CANDIES MAX");
+const u8 gText_StatEditor[] = _("EDIT STATS");

@@ -48,7 +48,7 @@
 #define FLAG_RECEIVED_GS_BALL 0x23 // Custom
 #define FLAG_RAN_CELEBI      0x24 // Custom
 #define FLAG_EXOTIC_INCENSE  0x25 // Custom
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
+#define FLAG_EVS_IVS_EDITOR  0x26 // Custom
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
