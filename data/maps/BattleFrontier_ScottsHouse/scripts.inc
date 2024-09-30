@@ -54,6 +54,8 @@ BattleFrontier_ScottsHouse_EventScript_CheckGoldSymbols::
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BerryPocketFull
 	giveitem ITEM_SHINY_BALL
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_ScottsHouse_EventScript_BallPocketFull
+	giveitem ITEM_CATCHING_CHARM
+	giveitem ITEM_OVAL_CHARM
 	msgbox BattleFrontier_ScottsHouse_Text_IWonItInLottery, MSGBOX_DEFAULT
 	setflag FLAG_COLLECTED_ALL_GOLD_SYMBOLS
 	setflag FLAG_TEMP_4

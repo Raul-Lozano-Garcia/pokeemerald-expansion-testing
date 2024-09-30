@@ -15327,7 +15327,7 @@ static void Cmd_handleballthrow(void)
                 maxShakes = BALL_3_SHAKES_SUCCESS;
             }
 
-            if (gLastUsedItem == ITEM_MASTER_BALL || gLastUsedItem == ITEM_SHINY_BALL)
+            if (gLastUsedItem == ITEM_MASTER_BALL || gLastUsedItem == ITEM_SHINY_BALL || gBattleSpritesDataPtr->animationData->isCriticalCapture)
             {
                 shakes = maxShakes;
             }
@@ -15956,31 +15956,10 @@ void BS_DoStockpileStatChangesWearOff(void)
 
 static bool32 CriticalCapture(u32 odds)
 {
-    u32 numCaught;
-
-    if (B_CRITICAL_CAPTURE == FALSE)
+    if (!CheckBagHasItem(ITEM_CATCHING_CHARM, 1))
         return FALSE;
 
-    numCaught = GetNationalPokedexCount(FLAG_GET_CAUGHT);
-
-    if (numCaught <= (NATIONAL_DEX_COUNT * 30) / 650)
-        odds = 0;
-    else if (numCaught <= (NATIONAL_DEX_COUNT * 150) / 650)
-        odds /= 2;
-    else if (numCaught <= (NATIONAL_DEX_COUNT * 300) / 650)
-        ;   // odds = (odds * 100) / 100;
-    else if (numCaught <= (NATIONAL_DEX_COUNT * 450) / 650)
-        odds = (odds * 150) / 100;
-    else if (numCaught <= (NATIONAL_DEX_COUNT * 600) / 650)
-        odds *= 2;
-    else
-        odds = (odds * 250) / 100;
-
-    if (CheckBagHasItem(ITEM_CATCHING_CHARM, 1))
-        odds = (odds * (100 + B_CATCHING_CHARM_BOOST)) / 100;
-
-    odds /= 6;
-    if ((Random() % 255) < odds)
+    if ((Random() % 10) == 0)
         return TRUE;
 
     return FALSE;

@@ -1142,7 +1142,13 @@ static bool8 TryProduceOrHatchEgg(struct DayCare *daycare)
     }
 
     // Check if an egg should be produced
-    if (daycare->offspringPersonality == 0 && validEggs == DAYCARE_MON_COUNT && (daycare->mons[1].steps & 0xFF) == 0xFF)
+    if (daycare->offspringPersonality == 0 && validEggs == DAYCARE_MON_COUNT && CheckBagHasItem(ITEM_OVAL_CHARM, 1) && daycare->stepCounter >= 10)
+    {
+        u8 compatibility = GetDaycareCompatibilityScore(daycare);
+        if (compatibility != 0)
+            TriggerPendingDaycareEgg();
+    } 
+    else if (daycare->offspringPersonality == 0 && validEggs == DAYCARE_MON_COUNT && (daycare->mons[1].steps & 0xFF) == 0xFF)
     {
         u8 compatibility = ModifyBreedingScoreForOvalCharm(GetDaycareCompatibilityScore(daycare));
         if (compatibility > (Random() * 100u) / USHRT_MAX)
@@ -1150,7 +1156,33 @@ static bool8 TryProduceOrHatchEgg(struct DayCare *daycare)
     }
 
     // Try to hatch Egg
-    if (++daycare->stepCounter == ((P_EGG_CYCLE_LENGTH >= GEN_8) ? 127 : 255))
+    if (CheckBagHasItem(ITEM_OVAL_CHARM, 1))
+    {
+        daycare->stepCounter++;
+
+        u32 eggCycles;
+
+        for (i = 0; i < gPlayerPartyCount; i++)
+        {
+            if (!GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+                continue;
+            if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_IS_BAD_EGG))
+                continue;
+
+            eggCycles = GetMonData(&gPlayerParty[i], MON_DATA_FRIENDSHIP);
+            if (eggCycles != 0)
+            {
+                eggCycles -= 1; 
+                SetMonData(&gPlayerParty[i], MON_DATA_FRIENDSHIP, &eggCycles);
+            }
+            else
+            {
+                gSpecialVar_0x8004 = i;
+                return TRUE;
+            }
+        }
+    }
+    else if (++daycare->stepCounter == ((P_EGG_CYCLE_LENGTH >= GEN_8) ? 127 : 255))
     {
         u32 eggCycles;
         u8 toSub = GetEggCyclesToSubtract();
