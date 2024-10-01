@@ -72,6 +72,13 @@ Route117_EventScript_CheckOnTwoMons::
 	release
 	end
 
+Route117_PokemonDayCare_EventScript_HintsWoman::
+	lock
+	faceplayer
+	msgbox Route117_PokemonDayCare_Text_HintsWoman, MSGBOX_DEFAULT
+	release
+	end
+
 Route117_PokemonDayCare_EventScript_DaycareWoman::
 	lock
 	faceplayer
@@ -328,6 +335,14 @@ Route117_Text_IWillKeepDoYouWantIt:
 	.string "I really will keep it.\n"
 	.string "You do want this, yes?$"
 
+Route117_PokemonDayCare_Text_HintsWoman:
+	.string "Breeding is a very peculiar thing!\p"
+	.string "A POKéMON holding an EVERSTONE will\n"
+	.string "pass on its nature to the baby.\p"
+	.string "A POKéMON holding a DESTINY KNOT will\n"
+	.string "cause the baby Pokémon to inherit 5\p"
+	.string "IVs from its parents.$"
+	 
 Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon:
 	.string "I'm the DAY-CARE LADY.\p"
 	.string "We can raise POKéMON for you.\p"
