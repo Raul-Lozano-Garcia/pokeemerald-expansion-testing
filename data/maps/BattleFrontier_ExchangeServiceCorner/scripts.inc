@@ -1129,1852 +1129,1886 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem::
 # 565 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	case 9, BattleFrontier_ExchangeServiceCorner_EventScript_ScopeLens
 # 566 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 10, BattleFrontier_ExchangeServiceCorner_EventScript_DestinyKnot
 # 567 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	case 11, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 # 568 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 # 569 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 570 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers::
+
 # 571 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers::
 # 572 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers, MSGBOX_YESNO
 # 573 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 574 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_LEFTOVERS
+	setvar VAR_0x8008, 10
 # 575 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_LEFTOVERS
 # 576 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 577 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 578 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_WhiteHerb::
+
 # 579 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_WhiteHerb::
 # 580 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb, MSGBOX_YESNO
 # 581 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 582 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_WHITE_HERB
+	setvar VAR_0x8008, 10
 # 583 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_WHITE_HERB
 # 584 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 585 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 586 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_QuickClaw::
+
 # 587 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_QuickClaw::
 # 588 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw, MSGBOX_YESNO
 # 589 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 590 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_QUICK_CLAW
+	setvar VAR_0x8008, 10
 # 591 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_QUICK_CLAW
 # 592 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 593 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 594 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_MentalHerb::
+
 # 595 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_MentalHerb::
 # 596 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb, MSGBOX_YESNO
 # 597 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 598 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_MENTAL_HERB
+	setvar VAR_0x8008, 10
 # 599 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_MENTAL_HERB
 # 600 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 601 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 602 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_Brightpowder::
+
 # 603 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_Brightpowder::
 # 604 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder, MSGBOX_YESNO
 # 605 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 606 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_BRIGHT_POWDER
+	setvar VAR_0x8008, 10
 # 607 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_BRIGHT_POWDER
 # 608 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 609 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 610 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_ChoiceBand::
+
 # 611 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_ChoiceBand::
 # 612 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand, MSGBOX_YESNO
 # 613 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 614 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_CHOICE_BAND
+	setvar VAR_0x8008, 10
 # 615 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_CHOICE_BAND
 # 616 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 617 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 618 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_ChoiceSpecs::
+
 # 619 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceSpecs, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_ChoiceSpecs::
 # 620 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceSpecs, MSGBOX_YESNO
 # 621 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 622 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_CHOICE_SPECS
+	setvar VAR_0x8008, 10
 # 623 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_CHOICE_SPECS
 # 624 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 625 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 626 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_KingsRock::
+
 # 627 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_KingsRock::
 # 628 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock, MSGBOX_YESNO
 # 629 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 630 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_KINGS_ROCK
+	setvar VAR_0x8008, 10
 # 631 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+	setvar VAR_0x8009, ITEM_KINGS_ROCK
 # 632 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 633 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 634 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_FocusBand::
+
 # 635 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_FocusBand::
 # 636 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand, MSGBOX_YESNO
 # 637 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8008, 10
-# 638 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_FOCUS_BAND
-# 639 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-# 640 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
-# 641 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 642 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_ScopeLens::
-# 643 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens, MSGBOX_YESNO
-# 644 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-# 645 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 638 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	setvar VAR_0x8008, 10
-# 646 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	setvar VAR_0x8009, ITEM_SCOPE_LENS
-# 647 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 639 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	setvar VAR_0x8009, ITEM_FOCUS_BAND
+# 640 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
+# 641 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	end
+# 642 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 643 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_EventScript_ScopeLens::
+# 644 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens, MSGBOX_YESNO
+# 645 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
+# 646 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	setvar VAR_0x8008, 10
+# 647 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	setvar VAR_0x8009, ITEM_SCOPE_LENS
 # 648 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 649 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 650 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_Man::
+
 # 651 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll, MSGBOX_NPC
+BattleFrontier_ExchangeServiceCorner_EventScript_DestinyKnot::
 # 652 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmDestinyKnot, MSGBOX_YESNO
 # 653 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
 # 654 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_Sailor::
+	setvar VAR_0x8008, 10
 # 655 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher, MSGBOX_NPC
+	setvar VAR_0x8009, ITEM_DESTINY_KNOT
 # 656 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 # 657 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 658 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_PokefanF::
+
 # 659 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	lock
+BattleFrontier_ExchangeServiceCorner_EventScript_Man::
 # 660 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant, MSGBOX_DEFAULT
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll, MSGBOX_NPC
 # 661 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	release
+	end
 # 662 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+
 # 663 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+BattleFrontier_ExchangeServiceCorner_EventScript_Sailor::
 # 664 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_RichBoy::
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher, MSGBOX_NPC
 # 665 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls, MSGBOX_NPC
+	end
 # 666 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+
 # 667 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+BattleFrontier_ExchangeServiceCorner_EventScript_PokefanF::
 # 668 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
+	lock
 # 669 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord, MSGBOX_NPC
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant, MSGBOX_DEFAULT
 # 670 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	end
+	release
 # 671 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	end
 # 672 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
+
 # 673 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Hello, this is the EXCHANGE SERVICE\n"
+BattleFrontier_ExchangeServiceCorner_EventScript_RichBoy::
 # 674 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "CORNER.\p"
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls, MSGBOX_NPC
 # 675 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "We exchange the Battle Points you\n"
+	end
 # 676 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "have collected for lovely prizes.\p"
+
 # 677 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Please choose a prize from this list.$"
+BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
 # 678 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord, MSGBOX_NPC
 # 679 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-@ Unused
+	end
 # 680 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
+
 # 681 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Please choose a prize from this list.$"
+BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
 # 682 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Hello, this is the EXCHANGE SERVICE\n"
 # 683 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster:
+	.string "CORNER.\p"
 # 684 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the KISS POSTER.\n"
+	.string "We exchange the Battle Points you\n"
 # 685 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "have collected for lovely prizes.\p"
 # 686 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Please choose a prize from this list.$"
 # 687 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion:
+
 # 688 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the KISS CUSHION.\n"
+@ Unused
 # 689 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
 # 690 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Please choose a prize from this list.$"
 # 691 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll:
+
 # 692 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the SMOOCHUM DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster:
 # 693 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the KISS POSTER.\n"
 # 694 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 695 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll:
+
 # 696 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the TOGEPI DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion:
 # 697 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the KISS CUSHION.\n"
 # 698 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 699 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll:
+
 # 700 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the MEOWTH DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll:
 # 701 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the SMOOCHUM DOLL.\n"
 # 702 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 703 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll:
+
 # 704 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CLEFAIRY DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll:
 # 705 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the TOGEPI DOLL.\n"
 # 706 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 707 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
+
 # 708 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the DITTO DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll:
 # 709 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the MEOWTH DOLL.\n"
 # 710 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 711 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll:
+
 # 712 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CYNDAQUIL DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll:
 # 713 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CLEFAIRY DOLL.\n"
 # 714 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 715 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll:
+
 # 716 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CHIKORITA DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
 # 717 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the DITTO DOLL.\n"
 # 718 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 719 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll:
+
 # 720 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the TOTODILE DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll:
 # 721 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CYNDAQUIL DOLL.\n"
 # 722 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 723 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll:
+
 # 724 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the LAPRAS DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll:
 # 725 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CHIKORITA DOLL.\n"
 # 726 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 727 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll:
+
 # 728 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the SNORLAX DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll:
 # 729 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the TOTODILE DOLL.\n"
 # 730 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 731 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
+
 # 732 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the VENUSAUR DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll:
 # 733 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the LAPRAS DOLL.\n"
 # 734 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 735 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
+
 # 736 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CHARIZARD DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll:
 # 737 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the SNORLAX DOLL.\n"
 # 738 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 739 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
+
 # 740 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the BLASTOISE DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
 # 741 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the VENUSAUR DOLL.\n"
 # 742 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 743 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmHealthMochi:
+
 # 744 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the HEALTH MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
 # 745 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CHARIZARD DOLL.\n"
 # 746 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 747 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMuscleMochi:
+
 # 748 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the MUSCLE MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
 # 749 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the BLASTOISE DOLL.\n"
 # 750 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 751 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmResistMochi:
+
 # 752 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the RESIST MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmHealthMochi:
 # 753 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the HEALTH MOCHI.\n"
 # 754 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 755 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmGeniusMochi:
+
 # 756 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the GENIUS MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmMuscleMochi:
 # 757 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the MUSCLE MOCHI.\n"
 # 758 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 759 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCleverMochi:
+
 # 760 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CLEVER MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmResistMochi:
 # 761 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the RESIST MOCHI.\n"
 # 762 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 763 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSwiftMochi:
+
 # 764 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the SWIFT MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmGeniusMochi:
 # 765 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the GENIUS MOCHI.\n"
 # 766 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 767 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmFreshStartMochi:
+
 # 768 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the FRESH START MOCHI.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCleverMochi:
 # 769 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CLEVER MOCHI.\n"
 # 770 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 771 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBottleCap:
+
 # 772 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the BOTTLE CAP.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSwiftMochi:
 # 773 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the SWIFT MOCHI.\n"
 # 774 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 775 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmGoldBottleCap:
+
 # 776 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the GOLD BOTTLE CAP.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmFreshStartMochi:
 # 777 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the FRESH START MOCHI.\n"
 # 778 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 779 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmAbilityCapsule:
+
 # 780 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the ABILITY CAPSULE.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBottleCap:
 # 781 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the BOTTLE CAP.\n"
 # 782 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 783 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLonelyMint:
+
 # 784 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the LONELY MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmGoldBottleCap:
 # 785 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the GOLD BOTTLE CAP.\n"
 # 786 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 787 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmAdamantMint:
+
 # 788 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the ADAMANT MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmAbilityCapsule:
 # 789 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the ABILITY CAPSULE.\n"
 # 790 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 791 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmNaughtyMint:
+
 # 792 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the NAUGHTY MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmLonelyMint:
 # 793 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the LONELY MINT.\n"
 # 794 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 795 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBraveMint:
+
 # 796 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the BRAVE MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmAdamantMint:
 # 797 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the ADAMANT MINT.\n"
 # 798 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 799 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBoldMint:
+
 # 800 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the BOLD MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmNaughtyMint:
 # 801 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the NAUGHTY MINT.\n"
 # 802 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 803 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmImpishMint:
+
 # 804 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the IMPISH MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBraveMint:
 # 805 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the BRAVE MINT.\n"
 # 806 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 807 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaxMint:
+
 # 808 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the LAX MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBoldMint:
 # 809 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the BOLD MINT.\n"
 # 810 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 811 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmRelaxedMint:
+
 # 812 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the RELAXED MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmImpishMint:
 # 813 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the IMPISH MINT.\n"
 # 814 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 815 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmModestMint:
+
 # 816 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the MODEST MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaxMint:
 # 817 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the LAX MINT.\n"
 # 818 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 819 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMildMint:
+
 # 820 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the MILD MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmRelaxedMint:
 # 821 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the RELAXED MINT.\n"
 # 822 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 823 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmRashMint:
+
 # 824 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the RASH MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmModestMint:
 # 825 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the MODEST MINT.\n"
 # 826 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 827 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuietMint:
+
 # 828 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the QUIET MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmMildMint:
 # 829 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the MILD MINT.\n"
 # 830 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 831 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalmMint:
+
 # 832 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CALM MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmRashMint:
 # 833 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the RASH MINT.\n"
 # 834 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 835 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmGentleMint:
+
 # 836 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the GENTLE MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuietMint:
 # 837 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the QUIET MINT.\n"
 # 838 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 839 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarefulMint:
+
 # 840 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CAREFUL MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalmMint:
 # 841 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CALM MINT.\n"
 # 842 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 843 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSassyMint:
+
 # 844 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the SASSY MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmGentleMint:
 # 845 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the GENTLE MINT.\n"
 # 846 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 847 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTimidMint:
+
 # 848 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the TIMID MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarefulMint:
 # 849 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CAREFUL MINT.\n"
 # 850 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 851 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmHastyMint:
+
 # 852 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the HASTY MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSassyMint:
 # 853 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the SASSY MINT.\n"
 # 854 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 855 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmJollyMint:
+
 # 856 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the Jolly MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmTimidMint:
 # 857 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the TIMID MINT.\n"
 # 858 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 859 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmNaiveMint:
+
 # 860 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the NAIVE MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmHastyMint:
 # 861 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the HASTY MINT.\n"
 # 862 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 863 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSeriousMint:
+
 # 864 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the SERIOUS MINT.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmJollyMint:
 # 865 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the Jolly MINT.\n"
 # 866 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 867 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
+
 # 868 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the BRIGHTPOWDER.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmNaiveMint:
 # 869 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the NAIVE MINT.\n"
 # 870 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 871 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
+
 # 872 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the WHITE HERB.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSeriousMint:
 # 873 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the SERIOUS MINT.\n"
 # 874 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 875 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
+
 # 876 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the QUICK CLAW.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
 # 877 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the BRIGHTPOWDER.\n"
 # 878 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 879 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
+
 # 880 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the MENTAL HERB.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
 # 881 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the WHITE HERB.\n"
 # 882 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 883 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
+
 # 884 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CHOICE BAND.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
 # 885 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the QUICK CLAW.\n"
 # 886 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 887 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceSpecs:
+
 # 888 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the CHOICE SPECS.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
 # 889 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the MENTAL HERB.\n"
 # 890 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 891 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
+
 # 892 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the KING'S ROCK.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
 # 893 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CHOICE BAND.\n"
 # 894 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 895 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
+
 # 896 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the FOCUS BAND.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceSpecs:
 # 897 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the CHOICE SPECS.\n"
 # 898 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 899 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:
+
 # 900 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the SCOPE LENS.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
 # 901 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Is that correct?$"
+	.string "You've chosen the KING'S ROCK.\n"
 # 902 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 903 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers:
-# 904 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You've chosen the LEFTOVERS.\n"
-# 905 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Is that correct?$"
+# 903 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 904 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
+# 905 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "You've chosen the FOCUS BAND.\n"
 # 906 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 907 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
+
 # 908 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Thank you!\n"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:
 # 909 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "We'll send it to your PC at home.$"
+	.string "You've chosen the SCOPE LENS.\n"
 # 910 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Is that correct?$"
 # 911 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
+
 # 912 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Here is your prize!$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers:
 # 913 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "You've chosen the LEFTOVERS.\n"
 # 914 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
+	.string "Is that correct?$"
 # 915 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "I'm so sorry…\n"
+
 # 916 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You don't have enough Battle Points…$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmDestinyKnot:
 # 917 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "You've chosen the DESTINY KNOT.\n"
 # 918 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_PCIsFull:
+	.string "Is that correct?$"
 # 919 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "I'm so sorry…\n"
+
 # 920 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Your PC appears to be full…$"
+BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
 # 921 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Thank you!\n"
 # 922 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt:
+	.string "We'll send it to your PC at home.$"
 # 923 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "I'm so sorry…\n"
-# 924 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You don't have space to hold it…$"
-# 925 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 
+# 924 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
+# 925 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Here is your prize!$"
 # 926 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints:
+
 # 927 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Thank you very much.\p"
+BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
 # 928 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Please visit us when you have\n"
+	.string "I'm so sorry…\n"
 # 929 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "saved up Battle Points.$"
+	.string "You don't have enough Battle Points…$"
 # 930 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 
 # 931 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls:
+BattleFrontier_ExchangeServiceCorner_Text_PCIsFull:
 # 932 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Oh, they're so nice!\n"
+	.string "I'm so sorry…\n"
 # 933 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "I wish I had them!\l"
+	.string "Your PC appears to be full…$"
 # 934 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Cute cushions!\l"
+
 # 935 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Big plush DOLLS!\l"
+BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt:
 # 936 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Little plush DOLLS!\l"
+	.string "I'm so sorry…\n"
 # 937 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "I wish I had them all!$"
+	.string "You don't have space to hold it…$"
 # 938 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 
 # 939 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant:
+BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints:
 # 940 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Leave it to your mommy!\p"
+	.string "Thank you very much.\p"
 # 941 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "If it's anything you want, I'll go\n"
+	.string "Please visit us when you have\n"
 # 942 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "through anything to get it, honey!$"
+	.string "saved up Battle Points.$"
 # 943 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 
 # 944 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher:
+BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls:
 # 945 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "If I can get hold of the items here,\n"
+	.string "Oh, they're so nice!\n"
 # 946 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "my POKéMON will get tougher.\p"
+	.string "I wish I had them!\l"
 # 947 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "You bet they will!\n"
+	.string "Cute cushions!\l"
 # 948 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "No question about it!$"
+	.string "Big plush DOLLS!\l"
 # 949 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Little plush DOLLS!\l"
 # 950 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll:
+	.string "I wish I had them all!$"
 # 951 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Hah?\n"
+
 # 952 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "What are you gawking at?\p"
+BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant:
 # 953 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "I don't like you staring at my plush\n"
+	.string "Leave it to your mommy!\p"
 # 954 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "doll like that.\p"
+	.string "If it's anything you want, I'll go\n"
 # 955 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "If you want it, go get one yourself!\n"
+	.string "through anything to get it, honey!$"
 # 956 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Isn't that right, SMOOCHUM?$"
+
 # 957 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher:
 # 958 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord:
+	.string "If I can get hold of the items here,\n"
 # 959 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Did you know?\p"
+	.string "my POKéMON will get tougher.\p"
 # 960 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "If you stretch your record at any of\n"
+	.string "You bet they will!\n"
 # 961 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "the BATTLE facilities, they start\l"
+	.string "No question about it!$"
 # 962 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "giving you more and more Battle Points.$"
+
 # 963 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll:
 # 964 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
+	.string "Hah?\n"
 # 965 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A large poster with a SMOOCHUM print.$"
+	.string "What are you gawking at?\p"
 # 966 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "I don't like you staring at my plush\n"
 # 967 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
+	.string "doll like that.\p"
 # 968 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A SMOOCHUM cushion.\n"
+	.string "If you want it, go get one yourself!\n"
 # 969 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "Isn't that right, SMOOCHUM?$"
 # 970 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 
 # 971 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
+BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord:
 # 972 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A SMOOCHUM DOLL.\n"
+	.string "Did you know?\p"
 # 973 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "If you stretch your record at any of\n"
 # 974 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "the BATTLE facilities, they start\l"
 # 975 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
+	.string "giving you more and more Battle Points.$"
 # 976 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A TOGEPI DOLL.\n"
+
 # 977 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
 # 978 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "A large poster with a SMOOCHUM print.$"
 # 979 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
+
 # 980 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A MEOWTH DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
 # 981 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "A SMOOCHUM cushion.\n"
 # 982 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 983 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
+
 # 984 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A CLEFAIRY DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
 # 985 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "A SMOOCHUM DOLL.\n"
 # 986 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 987 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
+
 # 988 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A DITTO DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
 # 989 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "A TOGEPI DOLL.\n"
 # 990 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 991 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
+
 # 992 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A CYNDAQUIL DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
 # 993 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "A MEOWTH DOLL.\n"
 # 994 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 995 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
+
 # 996 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A CHIKORITA DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
 # 997 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "A CLEFAIRY DOLL.\n"
 # 998 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 999 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
+
 # 1000 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A TOTODILE DOLL.\n"
+BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
 # 1001 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Place it on a mat or a desk.$"
+	.string "A DITTO DOLL.\n"
 # 1002 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1003 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
-# 1004 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A large DOLL.\n"
-# 1005 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Place it on a mat or a desk.$"
+# 1003 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1004 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
+# 1005 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "A CYNDAQUIL DOLL.\n"
 # 1006 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 1007 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_HealthMochiDesc::
+
 # 1008 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Raises the stat HP of one\n"
+BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
 # 1009 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "POKéMON to maximum.$"
+	.string "A CHIKORITA DOLL.\n"
 # 1010 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 1011 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_MuscleMochiDesc::
+
 # 1012 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Raises the stat ATTACK of one\n"
+BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
 # 1013 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "POKéMON to maximum.$"
+	.string "A TOTODILE DOLL.\n"
 # 1014 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 1015 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ResistMochiDesc::
+
 # 1016 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Raises the stat DEFENSE of one\n"
+BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
 # 1017 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "POKéMON to maximum.$"
+	.string "A large DOLL.\n"
 # 1018 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Place it on a mat or a desk.$"
 # 1019 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_GeniusMochiDesc::
+
 # 1020 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Raises the stat SP. ATK of one\n"
+BattleFrontier_ExchangeServiceCorner_Text_HealthMochiDesc::
 # 1021 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "POKéMON to maximum.$"
+	.string "Raises the stat HP of one\n"
 # 1022 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "POKéMON to maximum.$"
 # 1023 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_CleverMochiDesc::
+
 # 1024 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Raises the stat SP. DEF of one\n"
+BattleFrontier_ExchangeServiceCorner_Text_MuscleMochiDesc::
 # 1025 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "POKéMON to maximum.$"
+	.string "Raises the stat ATTACK of one\n"
 # 1026 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1027 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_SwiftMochiDesc::
-# 1028 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Raises the stat SPEED of one\n"
-# 1029 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "POKéMON to maximum.$"
+# 1027 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1028 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_ResistMochiDesc::
+# 1029 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Raises the stat DEFENSE of one\n"
 # 1030 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "POKéMON to maximum.$"
 # 1031 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_FreshStartMochiDesc::
+
 # 1032 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Resets all base points of\n"
+BattleFrontier_ExchangeServiceCorner_Text_GeniusMochiDesc::
 # 1033 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "a POKéMON.$"
+	.string "Raises the stat SP. ATK of one\n"
 # 1034 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "POKéMON to maximum.$"
 # 1035 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_BottleCapDesc::
+
 # 1036 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be redeemable for hypertraining\n"
+BattleFrontier_ExchangeServiceCorner_Text_CleverMochiDesc::
 # 1037 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "(maximizes one stat).$"
+	.string "Raises the stat SP. DEF of one\n"
 # 1038 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "POKéMON to maximum.$"
 # 1039 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_GoldBottleCapDesc::
+
 # 1040 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be redeemable for hypertraining\n"
+BattleFrontier_ExchangeServiceCorner_Text_SwiftMochiDesc::
 # 1041 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "(maximizes all stats).$"
+	.string "Raises the stat SPEED of one\n"
 # 1042 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "POKéMON to maximum.$"
 # 1043 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_AbilityCapsuleDesc::
+
 # 1044 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Switches a POKéMON's ability.$"
+BattleFrontier_ExchangeServiceCorner_Text_FreshStartMochiDesc::
 # 1045 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Resets all base points of\n"
 # 1046 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_LonelyMintDesc::
+	.string "a POKéMON.$"
 # 1047 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups ATTACK,\n"
+
 # 1048 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces DEFENSE.$"
+BattleFrontier_ExchangeServiceCorner_Text_BottleCapDesc::
 # 1049 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Can be redeemable for hypertraining\n"
 # 1050 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_AdamantMintDesc::
+	.string "(maximizes one stat).$"
 # 1051 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups ATTACK,\n"
+
 # 1052 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. ATK.$"
+BattleFrontier_ExchangeServiceCorner_Text_GoldBottleCapDesc::
 # 1053 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Can be redeemable for hypertraining\n"
 # 1054 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_NaughtyMintDesc::
+	.string "(maximizes all stats).$"
 # 1055 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups ATTACK,\n"
+
 # 1056 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. DEF.$"
+BattleFrontier_ExchangeServiceCorner_Text_AbilityCapsuleDesc::
 # 1057 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "Switches a POKéMON's ability.$"
 # 1058 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_BraveMintDesc::
+
 # 1059 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups ATTACK,\n"
+BattleFrontier_ExchangeServiceCorner_Text_LonelyMintDesc::
 # 1060 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SPEED.$"
+	.string "Can be smelled. It ups ATTACK,\n"
 # 1061 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces DEFENSE.$"
 # 1062 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_BoldMintDesc::
+
 # 1063 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups DEFENSE,\n"
+BattleFrontier_ExchangeServiceCorner_Text_AdamantMintDesc::
 # 1064 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces ATTACK.$"
+	.string "Can be smelled. It ups ATTACK,\n"
 # 1065 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SP. ATK.$"
 # 1066 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ImpishMintDesc::
+
 # 1067 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups DEFENSE,\n"
+BattleFrontier_ExchangeServiceCorner_Text_NaughtyMintDesc::
 # 1068 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. ATK.$"
+	.string "Can be smelled. It ups ATTACK,\n"
 # 1069 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SP. DEF.$"
 # 1070 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_LaxMintDesc::
+
 # 1071 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups DEFENSE,\n"
+BattleFrontier_ExchangeServiceCorner_Text_BraveMintDesc::
 # 1072 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. DEF.$"
+	.string "Can be smelled. It ups ATTACK,\n"
 # 1073 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SPEED.$"
 # 1074 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_RelaxedMintDesc::
+
 # 1075 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups DEFENSE,\n"
+BattleFrontier_ExchangeServiceCorner_Text_BoldMintDesc::
 # 1076 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SPEED.$"
+	.string "Can be smelled. It ups DEFENSE,\n"
 # 1077 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces ATTACK.$"
 # 1078 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ModestMintDesc::
+
 # 1079 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. ATK,\n"
+BattleFrontier_ExchangeServiceCorner_Text_ImpishMintDesc::
 # 1080 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces ATTACK.$"
+	.string "Can be smelled. It ups DEFENSE,\n"
 # 1081 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SP. ATK.$"
 # 1082 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_MildMintDesc::
+
 # 1083 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. ATK,\n"
+BattleFrontier_ExchangeServiceCorner_Text_LaxMintDesc::
 # 1084 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces DEFENSE.$"
+	.string "Can be smelled. It ups DEFENSE,\n"
 # 1085 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SP. DEF.$"
 # 1086 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_RashMintDesc::
+
 # 1087 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. ATK,\n"
+BattleFrontier_ExchangeServiceCorner_Text_RelaxedMintDesc::
 # 1088 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. DEF.$"
+	.string "Can be smelled. It ups DEFENSE,\n"
 # 1089 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SPEED.$"
 # 1090 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_QuietMintDesc::
+
 # 1091 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. ATK,\n"
+BattleFrontier_ExchangeServiceCorner_Text_ModestMintDesc::
 # 1092 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SPEED.$"
+	.string "Can be smelled. It ups SP. ATK,\n"
 # 1093 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces ATTACK.$"
 # 1094 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_CalmMintDesc::
+
 # 1095 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. DEF,\n"
+BattleFrontier_ExchangeServiceCorner_Text_MildMintDesc::
 # 1096 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces ATTACK.$"
+	.string "Can be smelled. It ups SP. ATK,\n"
 # 1097 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces DEFENSE.$"
 # 1098 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_GentleMintDesc::
+
 # 1099 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. DEF,\n"
+BattleFrontier_ExchangeServiceCorner_Text_RashMintDesc::
 # 1100 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces DEFENSE.$"
+	.string "Can be smelled. It ups SP. ATK,\n"
 # 1101 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1102 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_CarefulMintDesc::
-# 1103 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. DEF,\n"
-# 1104 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. ATK.$"
-# 1105 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1106 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_SassyMintDesc::
-# 1107 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SP. DEF,\n"
-# 1108 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SPEED.$"
-# 1109 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1110 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_TimidMintDesc::
-# 1111 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SPEED,\n"
-# 1112 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces ATTACK.$"
-# 1113 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1114 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_HastyMintDesc::
-# 1115 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SPEED,\n"
-# 1116 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces DEFENSE.$"
-# 1117 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1118 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_JollyMintDesc::
-# 1119 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SPEED,\n"
-# 1120 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "but reduces SP. ATK.$"
-# 1121 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
-# 1122 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_NaiveMintDesc::
-# 1123 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. It ups SPEED,\n"
-# 1124 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "but reduces SP. DEF.$"
+# 1102 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1103 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_QuietMintDesc::
+# 1104 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Can be smelled. It ups SP. ATK,\n"
+# 1105 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "but reduces SPEED.$"
+# 1106 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1107 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_CalmMintDesc::
+# 1108 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Can be smelled. It ups SP. DEF,\n"
+# 1109 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "but reduces ATTACK.$"
+# 1110 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1111 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_GentleMintDesc::
+# 1112 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Can be smelled. It ups SP. DEF,\n"
+# 1113 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "but reduces DEFENSE.$"
+# 1114 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1115 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_CarefulMintDesc::
+# 1116 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Can be smelled. It ups SP. DEF,\n"
+# 1117 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "but reduces SP. ATK.$"
+# 1118 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1119 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_SassyMintDesc::
+# 1120 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Can be smelled. It ups SP. DEF,\n"
+# 1121 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "but reduces SPEED.$"
+# 1122 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1123 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_TimidMintDesc::
+# 1124 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Can be smelled. It ups SPEED,\n"
 # 1125 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces ATTACK.$"
 # 1126 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_SeriousMintDesc::
+
 # 1127 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Can be smelled. makes each\n"
+BattleFrontier_ExchangeServiceCorner_Text_HastyMintDesc::
 # 1128 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "stat grow equally.$"
+	.string "Can be smelled. It ups SPEED,\n"
 # 1129 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces DEFENSE.$"
 # 1130 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
+
 # 1131 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that gradually restores\n"
+BattleFrontier_ExchangeServiceCorner_Text_JollyMintDesc::
 # 1132 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "HP in battle.$"
+	.string "Can be smelled. It ups SPEED,\n"
 # 1133 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SP. ATK.$"
 # 1134 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
+
 # 1135 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that restores any\n"
+BattleFrontier_ExchangeServiceCorner_Text_NaiveMintDesc::
 # 1136 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "lowered stat.$"
+	.string "Can be smelled. It ups SPEED,\n"
 # 1137 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "but reduces SP. DEF.$"
 # 1138 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
+
 # 1139 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that occasionally allows\n"
+BattleFrontier_ExchangeServiceCorner_Text_SeriousMintDesc::
 # 1140 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "the first strike.$"
+	.string "Can be smelled. makes each\n"
 # 1141 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "stat grow equally.$"
 # 1142 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
+
 # 1143 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that snaps POKéMON out\n"
+BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
 # 1144 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "of infatuation.$"
+	.string "A hold item that gradually restores\n"
 # 1145 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "HP in battle.$"
 # 1146 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
+
 # 1147 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that casts a glare to\n"
+BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
 # 1148 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "reduce accuracy.$"
+	.string "A hold item that restores any\n"
 # 1149 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "lowered stat.$"
 # 1150 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
+
 # 1151 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Boosts Attack, but permits\n"
+BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
 # 1152 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "only one move.$"
+	.string "A hold item that occasionally allows\n"
 # 1153 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "the first strike.$"
 # 1154 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc::
+
 # 1155 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "Boosts Sp. Atk, but permits\n"
+BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
 # 1156 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "only one move.$"
+	.string "A hold item that snaps POKéMON out\n"
 # 1157 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "of infatuation.$"
 # 1158 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
+
 # 1159 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that may cause flinching\n"
+BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
 # 1160 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "when the foe is hit.$"
+	.string "A hold item that casts a glare to\n"
 # 1161 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-
+	.string "reduce accuracy.$"
 # 1162 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
-# 1163 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that occasionally\n"
-# 1164 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "prevents fainting.$"
-# 1165 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 
+# 1163 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
+# 1164 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Boosts Attack, but permits\n"
+# 1165 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "only one move.$"
 # 1166 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
+
 # 1167 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	.string "A hold item that raises the\n"
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc::
 # 1168 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "Boosts Sp. Atk, but permits\n"
+# 1169 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "only one move.$"
+# 1170 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1171 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
+# 1172 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "A hold item that may cause flinching\n"
+# 1173 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "when the foe is hit.$"
+# 1174 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1175 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
+# 1176 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "A hold item that occasionally\n"
+# 1177 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "prevents fainting.$"
+# 1178 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1179 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
+# 1180 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "A hold item that raises the\n"
+# 1181 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "critical-hit rate.$"
+# 1182 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+
+# 1183 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+BattleFrontier_ExchangeServiceCorner_Text_DestinyKnotDesc::
+# 1184 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "If the holder falls in love,\n"
+# 1185 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+	.string "the foe does too.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining::
-# 1172 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1189 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	lock
-# 1173 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1190 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	faceplayer
-# 1174 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1191 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_0, MSGBOX_YESNO
-# 1175 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1192 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_2
-# 1330 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1347 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_21
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1:
-# 1332 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1349 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	releaseall
 	return
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_2:
-# 1176 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1193 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	message BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_1
-# 1177 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1194 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	multichoice 25, 8, MULTI_HYPERTRAINING, 0
-# 1178 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1195 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	closemessage
-# 1179 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1196 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_5
-# 1247 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1264 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	checkitem ITEM_GOLD_BOTTLE_CAP
-# 1248 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1265 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_11
-# 1326 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1343 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_20
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_5:
-# 1180 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1197 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	checkitem ITEM_BOTTLE_CAP
-# 1181 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1198 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_8
-# 1244 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1261 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_16
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_8:
-# 1182 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1199 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_2
-# 1183 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1200 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ChoosePartyMon
-# 1184 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1201 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	waitstate
-# 1185 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1202 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	message BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_3
-# 1186 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1203 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	multichoice 25, 0, MULTI_HYPERTRAINING_STAT, 0
-# 1187 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1204 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	closemessage
-# 1188 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1205 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_14
-# 1197 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1214 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_15
-# 1206 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1223 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_16
-# 1215 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1232 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 3
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_17
-# 1224 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1241 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 4
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_18
-# 1234 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1251 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 3, VAR_0x8004
-# 1235 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1252 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_43
-# 1240 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1257 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_15
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_11:
-# 1249 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1266 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_17
-# 1250 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1267 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ChoosePartyMon
-# 1251 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1268 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	waitstate
-# 1252 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1269 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 0, VAR_0x8004
-# 1253 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1270 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_25
-# 1263 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1280 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 1, VAR_0x8004
-# 1264 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1281 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_46
-# 1274 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1291 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 2, VAR_0x8004
-# 1275 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1292 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_49
-# 1285 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1302 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 3, VAR_0x8004
-# 1286 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1303 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_52
-# 1296 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1313 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 4, VAR_0x8004
-# 1297 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1314 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_55
-# 1307 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1324 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 5, VAR_0x8004
-# 1308 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1325 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_58
-# 1318 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1335 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_19
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_14:
-# 1189 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1206 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 0, VAR_0x8004
-# 1190 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1207 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_28
-# 1195 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1212 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_5
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_15:
-# 1198 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1215 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 1, VAR_0x8004
-# 1199 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1216 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_31
-# 1204 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1221 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_7
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_16:
-# 1207 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1224 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 2, VAR_0x8004
-# 1208 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1225 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_34
-# 1213 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1230 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_9
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_17:
-# 1216 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1233 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 4, VAR_0x8004
-# 1217 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1234 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_37
-# 1222 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1239 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_11
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_18:
-# 1225 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1242 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canhypertrain 5, VAR_0x8004
-# 1226 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1243 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_40
-# 1231 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1248 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_13
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_25:
-# 1254 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1271 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_GOLD_BOTTLE_CAP
-# 1255 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1272 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1256 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1273 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1257 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1274 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1258 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1275 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1259 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1276 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1260 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1277 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1261 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1278 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_28:
-# 1191 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1208 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 1192 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1209 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1193 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1210 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_4
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_31:
-# 1200 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1217 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 1201 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1218 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1202 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1219 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_6
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_34:
-# 1209 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1226 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 1210 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1227 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1211 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1228 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_8
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_37:
-# 1218 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1235 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 1219 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1236 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1220 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1237 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_10
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_40:
-# 1227 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1244 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 1228 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1245 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1229 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1246 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_12
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_43:
-# 1236 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1253 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_BOTTLE_CAP
-# 1237 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1254 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1238 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1255 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_14
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_46:
-# 1265 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1282 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_GOLD_BOTTLE_CAP
-# 1266 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1283 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1267 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1284 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1268 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1285 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1269 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1286 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1270 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1287 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1271 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1288 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1272 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1289 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_49:
-# 1276 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1293 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_GOLD_BOTTLE_CAP
-# 1277 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1294 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1278 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1295 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1279 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1296 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1280 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1297 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1281 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1298 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1282 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1299 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1283 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1300 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_52:
-# 1287 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1304 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_GOLD_BOTTLE_CAP
-# 1288 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1305 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1289 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1306 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1290 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1307 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1291 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1308 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1292 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1309 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1293 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1310 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1294 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1311 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_55:
-# 1298 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1315 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_GOLD_BOTTLE_CAP
-# 1299 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1316 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1300 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1317 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1301 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1318 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1302 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1319 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1303 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1320 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1304 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1321 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1305 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1322 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_58:
-# 1309 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1326 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	removeitem ITEM_GOLD_BOTTLE_CAP
-# 1310 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1327 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_HP, VAR_0x8004
-# 1311 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1328 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_ATK, VAR_0x8004
-# 1312 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1329 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_DEF, VAR_0x8004
-# 1313 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1330 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPATK, VAR_0x8004
-# 1314 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1331 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPDEF, VAR_0x8004
-# 1315 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1332 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	hypertrain STAT_SPEED, VAR_0x8004
-# 1316 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1333 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_1
 
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies::
-# 1336 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1353 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	lock
-# 1337 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1354 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	faceplayer
-# 1338 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1355 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_0, MSGBOX_YESNO
-# 1339 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1356 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_2
-# 1387 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1404 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_3
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_1:
-# 1389 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1406 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	releaseall
 	return
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_2:
-# 1340 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1357 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	message BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_1
-# 1341 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1358 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	multichoice 25, 0, MULTI_CANDIES, 0
-# 1342 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1359 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	closemessage
-# 1343 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1360 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_6
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_5:
-# 1350 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1367 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_9
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_8:
-# 1357 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1374 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 2
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_15
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_14:
-# 1364 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1381 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 3
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_21
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_20:
-# 1371 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1388 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, 4
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_26
-# 1379 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1396 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	giveitem ITEM_EXP_CANDY_MAX, 99
-# 1380 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1397 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_35
-# 1383 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1400 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_6:
-# 1344 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1361 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	giveitem ITEM_RARE_CANDY, 99
-# 1345 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1362 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_11
-# 1348 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1365 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_5
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_9:
-# 1351 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1368 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	giveitem ITEM_EXP_CANDY_S, 99
-# 1352 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1369 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_17
-# 1355 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1372 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_8
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_11:
-# 1346 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1363 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_5
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_15:
-# 1358 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1375 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	giveitem ITEM_EXP_CANDY_M, 99
-# 1359 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1376 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_23
-# 1362 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1379 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_14
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_17:
-# 1353 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1370 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_8
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_21:
-# 1365 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1382 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	giveitem ITEM_EXP_CANDY_L, 99
-# 1366 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1383 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_29
-# 1369 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1386 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_20
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_23:
-# 1360 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1377 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_14
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_26:
-# 1372 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1389 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	giveitem ITEM_EXP_CANDY_XL, 99
-# 1373 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1390 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_Candies_32
-# 1376 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1393 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_29:
-# 1367 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1384 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_20
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_32:
-# 1374 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1391 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_35:
-# 1381 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1398 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	goto Common_EventScript_ShowBagIsFull
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_Candies_1
 
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship::
-# 1393 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1410 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	lock
-# 1394 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1411 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	faceplayer
-# 1395 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1412 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_0, MSGBOX_YESNO
-# 1396 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1413 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_2
-# 1408 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1425 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_4
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_1:
-# 1410 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1427 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	releaseall
 	return
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_2:
-# 1397 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1414 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_1
-# 1398 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1415 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ChoosePartyMon
-# 1399 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1416 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	waitstate
-# 1400 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1417 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	canmaxfriendship VAR_0x8004
-# 1401 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1418 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_5
-# 1405 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1422 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_3
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_5:
-# 1402 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1419 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	maxfriendship VAR_0x8004
-# 1403 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1420 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	msgbox BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_2
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_1
 
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_0:
-# 1174 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1191 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Hello! I can hypertraining your POKéMON\n"
 	.string "in exchange for BOTTLE CAPS. Do you\l"
 	.string "want to?$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_1:
-# 1176 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1193 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Which kind of BOTTLE CAP do you want to\n"
 	.string "use?$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_2:
-# 1182 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1199 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Choose a POKéMON to hypertrain.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_3:
-# 1185 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1202 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Which stat do you want to hypertrain?$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_4:
-# 1193 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1210 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been hypertrained in\n"
 	.string "HP!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_5:
-# 1195 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1212 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "HP stat of your POKéMON can no longer\n"
 	.string "be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_6:
-# 1202 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1219 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been hypertrained in\n"
 	.string "ATTACK!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_7:
-# 1204 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1221 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "ATTACK stat of your POKéMON can no\n"
 	.string "longer be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_8:
-# 1211 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1228 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been hypertrained in\n"
 	.string "DEFENSE!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_9:
-# 1213 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1230 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "DEFENSE stat of your POKéMON can no\n"
 	.string "longer be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_10:
-# 1220 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1237 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been hypertrained in\n"
 	.string "SP. ATK!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_11:
-# 1222 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1239 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "SP. ATK stat of your POKéMON can no\n"
 	.string "longer be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_12:
-# 1229 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1246 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been hypertrained in\n"
 	.string "SP. DEF!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_13:
-# 1231 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1248 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "SP. DEF stat of your POKéMON can no\n"
 	.string "longer be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_14:
-# 1238 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1255 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been hypertrained in\n"
 	.string "SPEED!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_15:
-# 1240 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1257 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "SPEED stat of your POKéMON can no\n"
 	.string "longer be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_16:
-# 1244 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1261 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "You don't have any BOTTLE CAP.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_17:
-# 1249 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1266 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Choose a POKéMON to fully hypertrain.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_18:
-# 1261 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1278 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON has been fully\n"
 	.string "hypertrained!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_19:
-# 1318 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1335 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Your POKéMON can no longer be trained.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_20:
-# 1326 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1343 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "You don't have any GOLD BOTTLE CAP.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HyperTraining_Text_21:
-# 1330 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1347 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Ok. I'll be here if you need me. Bye!$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_0:
-# 1338 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1355 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Psst...psst! Over here! Do you want some\n"
 	.string "candies for free?$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_1:
-# 1340 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1357 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Take as many as you want.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_2:
-# 1348 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1365 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Come back for more whenever you want.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Candies_Text_3:
-# 1387 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1404 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Ok, never mind.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_0:
-# 1395 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1412 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "I'm known as the best POKéMON masseuse\n"
 	.string "in the world. I can make your POKéMON\l"
 	.string "increase their friendship to the\l"
@@ -2982,21 +3016,21 @@ BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_0:
 	.string "totally free! Do you want to try?$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_1:
-# 1397 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1414 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Choose a POKéMON give it the masseuse.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_2:
-# 1403 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1420 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "The friendship of this POKéMON is now\n"
 	.string "maximized! Don't thank me.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_3:
-# 1405 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1422 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "The friendship of this POKéMON is\n"
 	.string "already at its peak. My massages won't\l"
 	.string "do much good.$"
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MaxFriendship_Text_4:
-# 1408 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
+# 1425 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	.string "Come back when you want one of my\n"
 	.string "amazing massages. See you!$"

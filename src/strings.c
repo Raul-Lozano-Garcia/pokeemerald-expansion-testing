@@ -1209,6 +1209,7 @@ const u8 gText_ChoiceSpecs10BP[] = _("CHOICE SPECS{CLEAR_TO 0x5E}10BP");
 const u8 gText_KingsRock10BP[] = _("KING'S ROCK{CLEAR_TO 0x5E}10BP");
 const u8 gText_FocusBand10BP[] = _("FOCUS BAND{CLEAR_TO 0x5E}10BP");
 const u8 gText_ScopeLens10BP[] = _("SCOPE LENS{CLEAR_TO 0x5E}10BP");
+const u8 gText_DestinyKnot10BP[] = _("DESTINY KNOT{CLEAR_TO 0x5E}10BP");
 const u8 gText_Softboiled10BP[] = _("SOFTBOILED");
 const u8 gText_SeismicToss24BP[] = _("SEISMIC TOSS");
 const u8 gText_DreamEater24BP[] = _("DREAM EATER");

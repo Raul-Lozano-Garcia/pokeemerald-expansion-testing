@@ -734,6 +734,7 @@ extern const u8 gText_ChoiceSpecs10BP[];
 extern const u8 gText_KingsRock10BP[];
 extern const u8 gText_FocusBand10BP[];
 extern const u8 gText_ScopeLens10BP[];
+extern const u8 gText_DestinyKnot10BP[];
 
 extern const u8 gText_EnergyPowder50[];
 extern const u8 gText_EnergyRoot80[];
@@ -926,6 +927,7 @@ extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_DestinyKnotDesc[];
 
 // Custom
 extern const u8 gText_BottleCap[];
