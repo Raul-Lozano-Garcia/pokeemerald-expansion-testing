@@ -367,8 +367,10 @@ static u16 GetCurrentMapWildMonHeaderId(void)
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
-            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_WOODS) &&
-                gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_WOODS))
+            if ((gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PETALBURG_WOODS) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(PETALBURG_WOODS)) ||
+                (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE130) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE130)))
             {
                 i += VarGet(VAR_ENCOUNTER_TABLE);
                 FlagSet(FLAG_EXOTIC_INCENSE);
