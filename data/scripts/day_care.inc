@@ -340,8 +340,11 @@ Route117_PokemonDayCare_Text_HintsWoman:
 	.string "A POKéMON holding an EVERSTONE will\n"
 	.string "pass on its nature to the baby.\p"
 	.string "A POKéMON holding a DESTINY KNOT will\n"
-	.string "cause the baby Pokémon to inherit 5\p"
-	.string "IVs from its parents.$"
+	.string "cause the baby Pokémon to inherit 5\l"
+	.string "IVs from its parents.\p"
+	.string "A POKéMON holding a MIRROR HERB will\n"
+	.string "copy the other parent's moves that are\l"
+	.string "its own egg moves.$"
 	 
 Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon:
 	.string "I'm the DAY-CARE LADY.\p"
