@@ -1898,7 +1898,7 @@ static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u16 species, 
 #if OW_POKEMON_OBJECT_EVENTS
     switch (species)
     {
-    case SPECIES_UNOWN: // Letters >A are defined as species >= NUM_SPECIES, so are not contiguous with A
+    case SPECIES_UNOWN_A: // Letters >A are defined as species >= NUM_SPECIES, so are not contiguous with A
         form %= NUM_UNOWN_FORMS;
         graphicsInfo = &gSpeciesInfo[form ? SPECIES_UNOWN_A + form - 1 : species].overworldData;
         break;
@@ -2066,7 +2066,7 @@ static bool8 GetMonInfo(struct Pokemon *mon, u16 *species, u8 *form, u8 *shiny)
     *shiny = IsMonShiny(mon);
     switch (*species)
     {
-    case SPECIES_UNOWN:
+    case SPECIES_UNOWN_A:
         *form = GET_UNOWN_LETTER(mon->box.personality);
         break;
     case SPECIES_CASTFORM: // form is based on overworld weather

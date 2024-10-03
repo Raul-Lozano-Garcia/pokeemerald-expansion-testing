@@ -2186,7 +2186,7 @@ u32 GetUnownSpeciesId(u32 personality)
     u16 unownLetter = GetUnownLetterByPersonality(personality);
 
     if (unownLetter == 0)
-        return SPECIES_UNOWN;
+        return SPECIES_UNOWN_A;
     return unownLetter + SPECIES_UNOWN_A - 1;
 }
 
@@ -6327,7 +6327,7 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
     if (!GetSetPokedexFlag(nationalNum, getFlagCaseId)) // don't set if it's already set
     {
         GetSetPokedexFlag(nationalNum, caseId);
-        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_UNOWN)
+        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_UNOWN_A)
             gSaveBlock2Ptr->pokedex.unownPersonality = personality;
         if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_SPINDA)
             gSaveBlock2Ptr->pokedex.spindaPersonality = personality;
@@ -6336,7 +6336,7 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
 
 bool8 HasTwoFramesAnimation(u16 species)
 {
-    return P_TWO_FRAME_FRONT_SPRITES && species != SPECIES_UNOWN && species != SPECIES_SPINDA;
+    return P_TWO_FRAME_FRONT_SPRITES && species != SPECIES_UNOWN_A && species != SPECIES_SPINDA;
 }
 
 static bool8 ShouldSkipFriendshipChange(void)

@@ -151,7 +151,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
 
     if (GetBattlerSide(battlerId) == B_SIDE_PLAYER || IsContest())
     {
-        if (species == SPECIES_UNOWN)
+        if (species == SPECIES_UNOWN_A)
         {
             if (IsContest())
             {
@@ -174,7 +174,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
     }
     else
     {
-        if (species == SPECIES_UNOWN)
+        if (species == SPECIES_UNOWN_A)
         {
             spriteInfo = gBattleSpritesDataPtr->battlerData;
             if (!spriteInfo[battlerId].transformSpecies)
@@ -1256,7 +1256,7 @@ static bool8 ShouldRotScaleSpeciesBeFlipped(void)
 {
     if (IsContest())
     {
-        if (gSprites[GetAnimBattlerSpriteId(ANIM_ATTACKER)].data[2] == SPECIES_UNOWN)
+        if (gSprites[GetAnimBattlerSpriteId(ANIM_ATTACKER)].data[2] == SPECIES_UNOWN_A)
             return FALSE;
         else
             return TRUE;
@@ -2127,7 +2127,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             personality = gContestResources->moveAnim->personality;
         }
         species = SanitizeSpeciesId(species);
-        if (species == SPECIES_UNOWN)
+        if (species == SPECIES_UNOWN_A)
             species = GetUnownSpeciesId(personality);
         size = gSpeciesInfo[species].backPicSize;
         y_offset = gSpeciesInfo[species].backPicYOffset;
@@ -2149,7 +2149,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             }
 
             species = SanitizeSpeciesId(species);
-            if (species == SPECIES_UNOWN)
+            if (species == SPECIES_UNOWN_A)
                 species = GetUnownSpeciesId(personality);
             if (gSpeciesInfo[species].backPicFemale != NULL && IsPersonalityFemale(species, personality))
                 size = gSpeciesInfo[species].backPicSizeFemale;
@@ -2172,7 +2172,7 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             }
 
             species = SanitizeSpeciesId(species);
-            if (species == SPECIES_UNOWN)
+            if (species == SPECIES_UNOWN_A)
                 species = GetUnownSpeciesId(personality);
             if (gSpeciesInfo[species].frontPicFemale != NULL && IsPersonalityFemale(species, personality))
                 size = gSpeciesInfo[species].frontPicSizeFemale;

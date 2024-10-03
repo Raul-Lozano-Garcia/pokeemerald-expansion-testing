@@ -203,7 +203,7 @@
 #define SPECIES_MURKROW                                 198
 #define SPECIES_SLOWKING                                199
 #define SPECIES_MISDREAVUS                              200
-#define SPECIES_UNOWN                                   201
+#define SPECIES_UNOWN_A                                 201
 #define SPECIES_WOBBUFFET                               202
 #define SPECIES_GIRAFARIG                               203
 #define SPECIES_PINECO                                  204
@@ -1631,9 +1631,8 @@
 #define SPECIES_URSHIFU_SINGLE_STRIKE_STYLE_GIGANTAMAX  1521
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
-#define SPECIES_UNOWN_A                                 1525
 
-#define SPECIES_EGG (SPECIES_UNOWN_A + 1)
+#define SPECIES_EGG (SPECIES_MEWTWO_ARMORED + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 
